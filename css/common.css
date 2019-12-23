@@ -324,6 +324,15 @@ div.warp {
     font-size: 17px;
 }
 
+.swap p.i {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.swap p.ii {
+
+}
+
 .carousel-inner .p-t {
     font-size: 5.5rem;
 }
@@ -677,6 +686,15 @@ div.warp {
         font-size: 2.2rem;
     }
 
+    .swap p.i {
+        font-size: 2rem;
+    }
+
+    .swap p.ii {
+        display: none;
+    }
+
+
     .carousel-inner .p-t {
         font-size: 2.2rem;
     }
@@ -695,6 +713,10 @@ div.warp {
 
     .carousel-indicators {
         bottom: -5px!important;
+    }
+
+    .swap {
+        top: 20%!important;
     }
 }
 
