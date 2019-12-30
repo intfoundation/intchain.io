@@ -316,6 +316,23 @@
     top: 50px;
 }
 
+#blueprint {
+    padding: 10rem 0;
+    background: url("../image/bluebg.png") no-repeat center/cover;
+}
+
+#blueprint .line {
+    margin: 0 auto 8rem;
+}
+
+#blueprint .title {
+    color: #fff;
+}
+
+#blueprint img {
+    width: 100%;
+}
+
 #exchanges {
     padding: 10rem 0;
 }
@@ -648,6 +665,10 @@
     #wallet .sm-show {
         display: block;
     }
+
+    #blueprint .b-img {
+        margin-bottom: 2rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -777,6 +798,14 @@
         text-align: left;
         line-height: 35px;
         vertical-align: middle;
+    }
+
+    #blueprint {
+        padding: 4rem 0;
+    }
+
+    #blueprint .line {
+        margin: 0 auto 3rem;
     }
 
     #exchanges {
