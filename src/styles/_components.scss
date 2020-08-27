@@ -1,0 +1,1728 @@
+.hero {
+  height: auto;
+  min-height: 600px;
+  width: 100%;
+  background: $themeDark;
+  padding-top: 80px;
+  color: $contentLight;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  @include mq-med {
+    min-height: 520px;
+    padding-bottom: 40px;
+  }
+
+  &__content {
+    display: flex;
+
+    @include mq-lrg {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    @include mq-med {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @include mq-sml {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  &__header {
+    flex: 1;
+    padding: 40px 0;
+    position: relative;
+
+    @include mq-med {
+      z-index: 6;
+      max-width: 400px;
+    }
+  }
+
+  &__title {
+    @include font-size(4);
+    font-weight: 400;
+    line-height: 1.3;
+    padding-bottom: 20px;
+    position: relative;
+
+    @include mq-med {
+      @include font-size(3.6);
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 2px;
+      background: $highlight;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__subTitle {
+    @include font-size(1.8);
+    margin-bottom: 60px;
+    line-height: 1.8;
+  }
+
+  &__watch-video {
+    @include font-size(1.4);
+    cursor: pointer;
+    background: #FFFFFF;
+    display: inline-block;
+    padding: 10px 2px 10px 40px;
+    color: $contentPrimary;
+    text-decoration: none;
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 34px;
+      height: 34px;
+      background: url('assets/images/icons/arrow-right-dark.svg') no-repeat center center;
+      background-size: cover;
+      position: absolute;
+      top: 3px;
+      left: 6px;
+    }
+
+    &:hover {
+      &:after {
+        opacity: 0.7;
+      }
+    }
+
+    span {
+      display: inline-block;
+      position: relative;
+      padding-right: 20px;
+    }
+  }
+
+  &__graphic {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    padding: 0 60px 0;
+    z-index: 5;
+    
+    @include mq-med {
+      position: absolute;
+      top: auto;
+      bottom: 40px;
+      right: 0px;
+      opacity: 0.5;
+    }
+
+    @include mq-lrg {
+      padding: 40px 40px 0 0;
+    }
+
+    span {
+      display: inline-block;
+      width: 380px;
+      height: 380px;
+      background: url('assets/images/hero-pattern.png') no-repeat center center;
+      background-size: cover;
+
+      @include mq-lrg {
+        width: 280px;
+        height: 280px;
+      }
+    }
+  }
+}
+
+.section {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  &--spacing-bottom {
+    margin-bottom: 40px;
+  }
+
+  &--spacing-bottom-lg {
+    margin-bottom: 80px;
+  }
+
+  &__intro {
+    padding: 30px 0;
+    margin-bottom: 30px;
+  }
+
+  &__content {
+    padding: 60px 0px;
+
+    &--hr-top {
+      border-top: 1px solid $divider;
+    }
+
+    &--hr-bottom {
+      border-bottom: 1px solid $divider;
+    }
+
+    &--tint {
+      background: $background;
+    }
+
+    &--thin-top {
+      padding-top: 0;
+    }
+
+    &.bg--binary {
+      background: url('assets/images/binary-bg.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    &.bg--obd {
+      background: url('assets/images/obd-device.jpg') no-repeat center center;
+      background-size: cover;
+
+      @include mq-med {
+        background-position: 60% center;
+      }
+    }
+
+    &.bg--node-map {
+      padding: 20px 0;
+      background: url('assets/images/node-map.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    &.bsn {
+      background: url('assets/images/binary-bg-dark.jpg') no-repeat center center;
+      background-size: cover;
+      padding: 60px 80px;
+      color: #FFFFFF;
+
+      @include mq-med {
+        padding: 60px 20px;
+      }
+    }
+
+    @include mq-lrg {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 40px;
+    }
+
+    @include mq-med {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 30px;
+    }
+
+    @include mq-sml {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  &--push-up {
+    .section__content {
+      background-color: #FFF;
+      position: relative;
+      top: -50px;
+      padding-bottom: 0;
+
+      @include mq-lrg {
+        top: 0;
+      }
+    }
+  }
+
+  &--background-alt {
+    background-color: $background;
+  }
+
+  &--light {
+    background: #FFF;
+  }
+
+  &__title-container {
+    &--indent {
+      padding: 0 80px;
+
+      @include mq-lrg {
+        padding: 0;
+      }
+    }
+
+    &--indent-tint {
+      padding: 0 30px;
+    }
+
+    &--spacing-bottom {
+      padding-bottom: 30px;
+    }
+  }
+
+  &__title-sub-container {
+    display: flex;
+    justify-content: space-between;
+
+    @include mq-med {
+      display: block;
+    }
+  }
+
+  &__title {
+    @include title-underline(10px, 100px);
+    margin-bottom: 20px;
+
+    &--alt {
+      @include font-size(2.4);
+    }
+
+    @include mq-sml {
+      @include font-size(2.4);
+    }
+  }
+
+  &__subTitle {
+    @include font-size(1.6);
+    padding-right: 100px;
+
+    @include mq-med {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__more-link {
+    a {
+      @include font-size(1.5);
+      @include link-arrow(default);
+      color: $highlight;
+    }
+  }
+}
+
+.header-section {
+  padding-top: 100px;
+  width: 100%;
+  max-width: $contentWidth;
+
+  &__content {
+    display: flex;
+
+    &--spacing-bottom {
+      margin-bottom: 40px;
+    }
+
+    @include mq-lrg {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    @include mq-med {
+      display: block;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @include mq-sml {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  &__heading {
+    flex: 1;
+  }
+
+  &__title {
+    @include font-size(4.2);
+    font-weight: 700;
+    margin-bottom: 28px;
+    padding-right: 40px;
+    padding-bottom: 8px;
+    position: relative;
+
+    @include mq-sml {
+      @include font-size(4);
+    }
+
+    @include mq-xsml {
+      @include font-size(3.8)
+    }
+    
+    &::after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 2px;
+      background: $highlight;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__subTitle {
+    @include font-size(1.6);
+  }
+
+  &__intro {
+    flex: 1;
+    padding-top: 95px;
+    padding-left: 40px;
+
+    &--thin-top {
+      padding-top: 0;
+    }
+
+    @include mq-med {
+      padding-top: 30px;
+      padding-left: 0;
+    }
+  }
+
+  &__graphic {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0;
+    padding-left: 40px;
+
+    @include mq-med {
+      padding-top: 30px;
+    }
+
+    img {
+      max-width: 420px;
+      max-height: 420px;
+
+      @include mq-med {
+        max-width: 280px;
+        max-height: 280px;
+      }
+
+      @include mq-sml {
+        max-width: 280px;
+        max-height: 280px;
+      }
+    }
+  }
+
+  &--alt {
+    padding-top: 0;
+
+    .header-section__title {
+      @include font-size(3);
+      line-height: 1.3;
+    }
+
+    .header-section__intro {
+      &--thin-top {
+        padding-top: 0;
+      }
+
+      &--thin-left {
+        padding-left: 140px;
+      }
+    }
+  }
+}
+
+.banner {
+  color: $contentLight;
+  padding: 40px 80px;
+
+  @include mq-sml {
+    padding: 30px 40px;
+  }
+
+  &__info {
+    max-width: 500px;
+
+    &--thin {
+      width: 50%;
+
+      @include mq-sml {
+        width: 80%;
+      }
+    }
+  }
+
+  &__title {
+    @include mq-xsml {
+      @include font-size(2.2)
+    }
+  }
+
+  &__graphic {
+    padding: 20px 60px;
+
+    img {
+      max-width: 900px;
+      max-height: 330px;
+
+      @include mq-lrg {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.banner-bsn {
+  color: $contentLight;
+  display: flex;
+
+  @include mq-med {
+    display: block;
+  }
+
+  &__info {
+    color: $contentLight;
+    flex: 2;
+
+    @include mq-med {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__title {
+    @include mq-xsml {
+      @include font-size(2.2)
+    }
+
+    &::after {
+      content: '';
+
+      display: block;
+      width: 80px;
+      height: 2px;
+      background: $highlight;
+      margin-top: 8px;
+    }
+  }
+
+  &__link {
+    color: $contentLight;
+  }
+
+  &__graphic {
+    padding: 20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+    img {
+      width: 100px;
+      border: 6px solid #fff;
+    }
+  }
+}
+
+.icon-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 80px;
+
+  @include mq-lrg {
+    padding: 0 0 40px;
+  }
+
+  &__item {
+    max-width: 300px;
+    padding: 20px 0 40px 68px;
+    position: relative;
+
+    @include mq-lrg {
+      max-width: none;
+      padding: 20px 0 20px 68px;
+    }
+
+    @include mq-sml {
+      max-width: none;
+      padding: 20px 0 20px 62px;
+    }
+  }
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+    position: absolute; 
+    top: 20px;
+    left: 0;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    &--layers {
+      background-image: url('assets/images/icons/layers.svg');
+    }
+
+    &--hex {
+      background-image: url('assets/images/icons/hexagon.svg');
+
+      &:after {
+        content: '';
+        background-image: url('assets/images/icons/hexagon.svg');
+        width: 50px;
+        height: 50px;
+        position: absolute; 
+        top: -14px;
+        left: 8px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+    }
+
+    &--grid {
+      background-image: url('assets/images/icons/grid.svg');
+    }
+
+    &--db {
+      background-image: url('assets/images/icons/coins.svg');
+    }
+
+    &--cube {
+      background-image: url('assets/images/icons/box.svg');
+    }
+
+    &--diamond {
+      background-image: url('assets/images/icons/award.svg');
+      transform: scale(1.2);
+    }
+  }
+
+  &__title {
+    @include font-size(1.8);
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+
+  &__description {
+    @include font-size(1.4);
+    color: $contentMed;
+  }
+}
+
+.applications-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0px 0;
+
+  @include mq-lrg {
+      justify-content: center;
+  }
+
+  &--spacing {
+    padding-top: 40px;
+  }
+
+  &__item {
+    max-width: 250px;
+    padding: 30px;
+    background: rgb(39,43,56);
+    background: radial-gradient(circle, rgba(29,33,56,1) 0%, rgba(23,25,40,1) 100%);
+    color: $contentLight;
+    margin-bottom: 30px;
+
+    @include mq-lrg {
+      margin: 6px;
+    }
+
+    @include mq-med {
+      max-width: 200px;
+      padding: 15px 15px 20px;
+    }
+
+    @include mq-sml {
+      max-width: 180px;
+      padding: 15px 15px 20px;
+    }
+
+    @include mq-xsml {
+      max-width: 158px;
+      padding: 15px 15px 20px;
+      margin: 4px;
+    }
+  }
+
+  &__graphic {
+    @include centre-auto;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    @include mq-med {
+      width: 140px;
+      height: 140px;
+      margin-bottom: 20px;
+    }
+
+    @include mq-xsml {
+      width: 120px;
+      height: 120px;
+    }
+
+    &--home {
+      background-image: url('assets/images/app-pattern-06.png');
+
+      .applications-grid__icon span {
+        background-image: url('assets/images/icons/home.png');
+      }
+    }
+
+    &--obd {
+      background-image: url('assets/images/app-pattern-04.png');
+
+      .applications-grid__icon span {
+        background-image: url('assets/images/icons/route.png');
+      }
+    }
+
+    &--building {
+      background-image: url('assets/images/app-pattern-03.png');
+
+      .applications-grid__icon span {
+        background-image: url('assets/images/icons/finance.png');
+      }
+    }
+
+    &--transportation {
+      background-image: url('assets/images/app-pattern-05.png');
+
+      .applications-grid__icon span {
+        background-image: url('assets/images/icons/truck.png');
+      }
+    }
+
+    &--logistics {
+      background-image: url('assets/images/app-pattern-07.png');
+
+      .applications-grid__icon span {
+        background-image: url('assets/images/icons/cube.png');
+      }
+    }
+
+    &--parking {
+      background-image: url('assets/images/app-pattern-02.png');
+
+      .applications-grid__icon span {
+        background-image: url('assets/images/icons/wifi.png');
+      }
+    }
+
+    &--security {
+      background-image: url('assets/images/app-pattern-08.png');
+
+      .applications-grid__icon span {
+        background-image: url('assets/images/icons/security.png');
+      }
+    }
+
+    &--environment {
+      background-image: url('assets/images/app-pattern-01.png');
+
+      .applications-grid__icon span {
+        background-image: url('assets/images/icons/heart.png');
+      }
+    }
+  }
+
+  &__icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 26px;
+    background: $highlight;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-repeat: none;
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+
+  &__title {
+    @include font-size(1.4);
+    font-weight: 700;
+    margin-bottom: 16px;
+
+    @include mq-med {
+      @include font-size(1.3);
+    }
+  }
+
+  &__description {
+    @include font-size(1.3);
+    line-height: 1.5;
+
+    @include mq-med {
+      @include font-size(1.2);
+    }
+  }
+}
+
+.functions-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+
+  &.spacing {
+    padding-top: 40px;
+  }
+
+  &__item {
+    max-width: 212px;
+    padding: 24px;
+    background: $background;
+    margin: 3px;
+
+    @include mq-xsml {
+      max-width: none;
+    }
+  }
+
+  &__graphic {
+    margin: 0px 0px 30px;
+    display: flex;
+    justify-content: flex-end;
+
+    @include mq-xsml {
+      margin: 0px 0px 12px;
+    }
+  }
+
+  &__icon {
+    border-radius: 26px;
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    
+    background-repeat: none;
+    background-position: center center;
+    background-size: cover;
+
+    &--remote {
+      background-image: url('assets/images/icons/five/cast.svg');
+    }
+
+    &--security {
+      background-image: url('assets/images/icons/five/shield.svg');
+    }
+
+    &--position {
+      background-image: url('assets/images/icons/five/map-pin.svg');
+    }
+
+    &--driving {
+      background-image: url('assets/images/icons/five/bar-chart-2.svg');
+    }
+
+    &--community {
+      background-image: url('assets/images/icons/five/message-square.svg');
+    }
+
+  }
+
+  &__title {
+    @include font-size(1.6);
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  &__description {
+    @include font-size(1.3);
+
+    line-height: 1.5;
+  }
+}
+
+.dual-sections {
+  display: flex;
+
+  @include mq-med {
+    display: block;
+  }
+
+  &__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 80px 0  0px;
+
+    @include mq-med {
+      padding: 0 0px 0  0px;
+    }
+
+    p {
+      // @include font-size(1.5);
+    }
+  }
+
+  &__title {
+    @include font-size(2.4);
+    @include title-underline();
+  }
+
+  &__image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 40px;
+
+    @include mq-med {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+
+    img {
+      max-width: 500px;
+      max-height: 500px;
+      display: block;
+
+      @include mq-med {
+        max-width: 300px;
+        max-height: 300px;
+      }
+
+      @include mq-sml {
+        max-width: 280px;
+        max-height: 280px;
+      }
+    }
+
+    &--sm {
+      justify-content: center;
+
+      img {
+        max-width: 200px;
+        max-height: 200px;
+      }
+    }
+  }
+
+  &--reverse {
+    flex-direction: row-reverse;
+
+    .dual-sections__info {
+      padding: 0 80px 0  40px;
+
+      @include mq-med {
+        padding: 0;
+      }
+    }
+  
+    .dual-sections__image {
+      padding: 0 40px 0  80px;
+
+      @include mq-med {
+        padding: 20px 40px 0  40px;
+      }
+
+      img {
+        max-width: 400px;
+        max-height: 400px;
+
+        @include mq-med {
+          max-width: 400px;
+          max-height: 300px;
+        }
+
+        @include mq-sml {
+          max-width: 280px;
+          max-height: 280px;
+        }
+      }
+
+      &--sm {
+        justify-content: center;
+        img {
+          max-width: 200px;
+          max-height: 200px;
+        }
+      }
+
+      &--tendermint {
+        justify-content: left;
+  
+        img {
+          width: 100%;
+          max-width: 280px;
+          border: 1px solid #111;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+}
+
+.dual-grid {
+  display: flex;
+  justify-content: flex-end;
+
+  @include mq-med {
+    display: block;
+  }
+
+  &__item {
+    background: $themeDark;
+    margin: 10px 5px;
+    flex: 1;
+    position: relative;
+
+    &--spacing-bottom {
+      padding-bottom: 80px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include mq-med {
+      margin: 10px 0;
+    }
+  }
+
+  &__image {
+    padding: 40px 40px 20px;
+    display: flex;
+    justify-content: flex-end;
+
+    @include mq-med {
+      padding: 30px 30px 10px;
+    }
+
+    img {
+      max-width: 360px;
+      max-height: 220px;
+
+      @include mq-med {
+        max-width: 200px;
+        max-height: 130px;
+      }
+    }
+  }
+
+  &__info {
+    padding: 20px 120px 40px 40px;
+
+    @include mq-med {
+      padding: 20px;
+    }
+
+    p {
+      @include font-size(1.6);
+      color: $contentLight;
+    }
+
+    ul {
+      li {
+        @include font-size(1.6);
+        color: $contentLight;
+      }
+    }
+  }
+
+  &__title {
+    @include font-size(2);
+    color: $contentLight;
+  }
+
+  &__link-sticky {
+    position: absolute;
+    bottom: 20px;
+  }
+
+  &--vertical-lg {
+    display: block;
+
+    .dual-grid__item {
+      padding: 60px 40px;
+      background: rgb(39,43,56);
+      background: radial-gradient(circle, rgba(29,33,56,1) 0%, rgba(23,25,40,1) 100%);
+    }
+
+    .dual-grid__image {
+      justify-content: center;
+      align-items: center;
+
+      img {
+        max-width: 660px;
+        max-height: 660px;
+        // width: 420px;
+        // height: 420px;
+
+        @include mq-med {
+          max-width: none;
+          max-height: none;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.download-grid {
+  display: flex;
+  justify-content: flex-end;
+
+  @include mq-med {
+    display: block;
+  }
+
+  &__item {
+    background: $background;
+    margin: 10px;
+    flex: 1;
+    position: relative;
+  }
+
+  &__bg {
+    width: 360px;
+    height: 360px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background: url('assets/images/grid-bg.png') no-repeat center center;
+    background-size: cover;
+  }
+
+  &__image {
+    padding: 60px 60px 50px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 9;
+
+    img {
+      max-width: 200px;
+      max-height: 120px;
+    }
+
+    &--lg {
+      img {
+        max-width: 360px;
+        max-height: 200px;
+      }
+    }
+
+    @include mq-med {
+      padding: 40px 40px 20px;
+    }
+
+    @include mq-sml {
+      padding: 24px 30px 24px;
+    }
+  }
+
+  &__link {    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__info {
+    padding: 20px 120px 40px 40px;
+    position: relative;
+    z-index: 10;
+
+    @include mq-med {
+      padding: 20px 40px 40px 40px;
+    }
+
+    @include mq-sml {
+      padding: 10px 30px 30px;
+    }
+
+    p {
+      @include font-size(1.5);
+    }
+  }
+
+  &__title {
+    @include font-size(2);
+  }
+
+  &--full-width {
+    .download-grid__item {
+      margin: 0 0 20px 0;
+    }
+  }
+}
+
+.latest-news {
+  display: flex;
+  // justify-content: flex-end;
+  padding-top: 30px;
+
+  &__twitter-feed {
+    // max-width: 500px;
+    // width: 500px;
+    // height: 600px;
+    overflow: hidden;
+    overflow-y: auto;
+    // border: 1px solid $divider;
+    padding: 10px 10px 6px;
+    // border-radius: 10px;
+    background: $background;
+  }
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  background: $background;
+
+  &--spacing-top {
+    padding-top: 40px;
+  }
+
+  &--spacing-bottom {
+    padding-bottom: 40px;
+  }
+
+  @include mq-sml {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .team-item {
+    margin: 4px;
+    width: 330px;
+    background: #FFF;
+    padding: 30px;
+
+    @include mq-sml {
+      width: 100%;
+      margin: 10px 20px;
+    }
+
+    .team-item-image {
+      overflow: hidden;
+      margin: 0 auto 20px auto;
+      width: 150px;
+      height: 150px;
+      border-radius: 75px;
+
+      img {
+        width: 150px;
+        display: block;
+        position: relative;
+        top: -1px;
+        left: -2px;
+      }
+    }
+
+    .team-item-name {
+      @include font-size(2);
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: block;
+      padding-bottom: 6px;
+
+      &::after {
+        content: '';
+
+        display: block;
+        width: 40px;
+        height: 2px;
+        background: $highlight;
+        margin-top: 8px;
+      }
+    }
+
+    .team-item-role {
+      @include font-size(1.4);
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+
+    .team-item-description {
+      @include font-size(1.2);
+      line-height: 1.6;
+      max-width: 260px;
+
+      @include mq-sml {
+        max-width: none;
+      }
+    }
+  }
+
+  &.secondary {
+    flex-wrap: wrap;
+
+    .team-item {
+      margin: 4px;
+      width: 250px;
+      padding: 30px 20px;
+
+      @include mq-sml {
+        width: auto;
+        max-width: 218px;
+      }
+
+      @include mq-xsml {
+        width: 100%;
+        max-width: none;
+        margin: 5px 10px;
+      }
+
+      .team-item-image {
+        margin: 0 auto 20px auto;
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+
+        img {
+          width: 120px;
+        }
+      }
+
+      .team-item-name {
+        @include font-size(2);
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  &.tertiary {
+    flex-wrap: wrap;
+
+    .team-item {
+      margin: 4px;
+      width: 198px;
+      padding: 30px 20px;
+
+      @include mq-sml {
+        width: 100%;
+        max-width: none;
+        max-width: 218px;
+      }
+
+      @include mq-xsml {
+        margin: 5px 10px;
+        max-width: none;
+      }
+
+      .team-item-image {
+        margin: 0 auto 20px auto;
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+
+        img {
+          width: 120px;
+        }
+      }
+
+      .team-item-name {
+        @include font-size(1.6);
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+
+.partners {
+  @include centre-auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  
+  @include mq-lrg {
+    justify-content: center;
+  }
+
+  @include mq-lrg {
+    padding: 40px 0 0;
+  }
+
+  .partner {
+    height: 100px;
+    width: 212px;
+    background-color: $background;
+    margin: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mq-sml {
+      justify-content: center;
+      width: 120px;
+      height: 120px;
+
+      img {
+        width: auto;
+        height: auto;
+        max-height: 50px;
+        max-width: 80px;
+      }
+    }
+
+    @include mq-xsml {
+      justify-content: center;
+      width: 106px;
+      height: 106px;
+      margin: 3px;
+    }
+  }
+}
+
+.featured {
+  @include centre-auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0;
+
+  @include mq-lrg {
+    justify-content: center;
+  }
+
+  @include mq-lrg {
+    padding: 40px 0 0;
+  }
+
+  &__item {
+    height: 100px;
+    width: 212px;
+    background-color: $background;
+    margin: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      filter: grayscale(100%);
+      opacity: 0.7;
+    }
+
+    @include mq-sml {
+      justify-content: center;
+      width: 120px;
+      height: 120px;
+
+      img {
+        width: auto;
+        height: auto;
+        max-height: 50px;
+        max-width: 90px;
+      }
+    }
+
+    @include mq-xsml {
+      justify-content: center;
+      width: 106px;
+      height: 106px;
+      margin: 3px;
+    }
+  }
+}
+
+.exchanges {
+  @include centre-auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0;
+
+  @include mq-lrg {
+    justify-content: center;
+  }
+
+  @include mq-lrg {
+    padding: 40px 0 0;
+  }
+
+  .exchange {
+    height: 100px;
+    width: 212px;
+    background-color: $background;
+    margin: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mq-sml {
+      justify-content: center;
+      width: 120px;
+      height: 120px;
+  
+      img {
+        width: auto;
+        height: auto;
+        max-height: 50px;
+        max-width: 90px;
+      }
+    }
+  
+    @include mq-xsml {
+      justify-content: center;
+      width: 106px;
+      height: 106px;
+      margin: 3px;
+    }
+  }
+}
+
+.footer {
+  @include primary-font;
+  width: 100%;
+  // min-height: 440px;
+  background: rgb(39,43,56);
+  background: radial-gradient(circle, rgba(39,43,56,1) 0%, rgba(23,25,40,1) 100%);
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 40px 100px 40px;
+
+  @include mq-med {
+    padding: 50px 40px 100px 40px;
+  }
+
+  @include mq-lrg {
+    .navActive & {
+      display: none;
+    }
+  }
+
+  &__copyright {
+    @include font-size(1.2);
+    margin-bottom: 8px;
+  }
+
+  &__main {
+    width: 100%;
+    display: block;
+    max-width: 1000px;
+    display: flex;
+
+    @include mq-med {
+      display: block;
+    }
+  }
+
+  &__col {
+    &--left {
+      flex: 1;
+
+      @include mq-lrg {
+        margin-bottom: 30px;
+      }
+    }
+
+    &--right {
+      flex: 3;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 15px;
+
+    @include mq-med {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    @include font-size(2);
+    margin-bottom: 40px;
+
+    @include mq-med {
+      text-align: center;
+    }
+
+    @include mq-lrg {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__social-media {
+    ul {
+      li {
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    }
+
+    @include mq-lrg {
+      text-align: center;
+
+      ul li:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__menu-wrapper {
+    max-width: 1000px;
+    display: flex;
+    padding: 0 0 20px 50px;
+    margin: auto;
+
+    @include mq-med {
+      display: block;
+      justify-content: center;
+      padding: 0;
+    }
+  }
+
+  &__menu_block {
+    margin: 0 30px;
+
+    @include mq-med {
+      margin: 0 0 30px;
+      text-align: center;
+    }
+  }
+
+  &__menu_caption {
+    @include font-size(1.8);
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.4;
+
+    @include mq-med {
+      @include font-size(1.6);
+      margin-bottom: 10px;
+    }
+  }
+
+  &__menu_item {
+    margin-bottom: 5px;
+
+    a {
+      @include font-size(1.3);
+      color: #fff;
+      line-height: 1.4;
+      transition: color 0.3s ease;
+      position: relative;
+      padding-left: 15px;
+      
+      &:before {
+        content: '';
+        width: 11px;
+        height: 11px;
+        position: absolute;
+        background: url('assets/images/icons/chevron-sm-right-light.svg') no-repeat center center;
+        background-size: cover;
+        top: 3px;
+        left: 0;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    // background-color: #20282b;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    justify-content: center;
+
+    a {
+      @include font-size(1.2);
+      transition: color 0.3s ease;
+      color: #fff;
+      margin: 0 5px;
+      display: inline-block;
+
+      &:hover {
+        transition: color 0.3s ease;
+      }
+    }
+  }
+
+  &__bottom-title {
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+
+  &__bottom-info {
+    p {
+      margin-bottom: 15px;
+      line-height: 1.4;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #94b7dd;
+          transition: color 0.3s ease;
+        }
+      }
+
+      &.footer__powered-by {
+        margin: 30px 0 5px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .theme-bar {
+    position: absolute;
+    top: 0;
+    height: 5px;
+  }
+}
+
+.disclaimer {
+  max-width: 600px; 
+  margin: 0 0 100px;
+
+  .list__item {
+    margin-bottom: 20px;
+  }
+}
+
+.risk-statement {
+  max-width: 600px; 
+  margin: 0 0 100px;
+
+  .list__item {
+    margin-bottom: 20px;
+  }
+}

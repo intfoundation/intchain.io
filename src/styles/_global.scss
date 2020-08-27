@@ -1,0 +1,180 @@
+html {
+	height: 100%;
+}
+
+body {
+	@include font-size(1.6);
+	@include primary-font;
+	// background-color: $background;
+	color: $contentPrimary;
+	height: 100%;
+	line-height: 1.4;
+
+	@include mq-sml {
+		.hide-sml {
+			display: none;
+		}
+	}
+}
+
+h1 {
+	@include font-size(3.4);
+	margin-bottom: 20px;
+	font-weight: 700;
+	line-height: 1.4;
+	// margin-top: 40px;
+}
+
+h2 {
+	@include font-size(2.8);
+	font-weight: 700;
+	line-height: 1.4;
+	margin-bottom: 20px;
+	// margin-top: 40px;
+}
+
+h3 {
+	@include font-size(1.8);
+	font-weight: 700;
+	margin-bottom: 10px;
+	// margin-top: 40px;
+}
+
+h4 {
+	@include font-size(1.6);
+	font-weight: 700;
+	// margin-bottom: 10px;
+}
+
+p {
+	@include font-size(1.6);
+	line-height: 1.5;
+	margin-bottom: 20px;
+
+	strong {
+		font-weight: 700;
+	}
+}
+
+ul, li {
+	@include font-size(1.6);
+}
+
+a {
+	color: $highlight;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&.button-link {
+		@include link-arrow(main);
+		border: solid 1px $highlight;
+
+		&--main {
+			@include link-arrow(main);
+			border: solid 1px $highlight;
+			color: $highlight;
+		}
+
+		&--light {
+			@include link-arrow(light);
+			border: solid 1px $contentLight;
+			color: $contentLight;
+		}
+
+		&--dark {
+			@include link-arrow(dark);
+			border: solid 1px $contentPrimary;
+			color: $contentPrimary;
+		}
+
+		padding: 10px 36px 10px 20px;
+		position: relative;
+
+		&:after {
+			top: 16px;
+			right: 18px;
+		}
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.content-container {
+	max-width: $contentWidth;
+	width: 100%;
+
+	// @include mq-lrg {
+	// 	padding-left: 40px;
+	// 	padding-right: 40px;
+	// }
+
+	// @include mq-med {
+	// 	padding-left: 20px;
+	// 	padding-right: 20px;
+	// }
+
+	// @include mq-sml {
+	// 	padding-left: 16px;
+	// 	padding-right: 16px;
+	// }
+}
+
+.btn {
+	@include transition(color);
+	@include font-size(1.2);
+	background-color: $dark;
+  font-weight: 400;
+  border: none;
+  color: $contentLight;
+  padding: 6px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+  	color: $highlight;
+  }
+}
+
+.list {
+	margin-bottom: 20px;
+
+	&__title {
+		@include font-size(1.8);
+		font-weight: 700;
+		margin-bottom: 18px;
+	}
+
+	&__subTitle {
+		@include font-size(1.4);
+		font-weight: 700;
+		margin-bottom: 8px;
+		display: block;
+	}
+
+	&__items {
+		padding: 0 20px;
+		list-style-type: disc;
+	}
+
+	&__item {
+		margin-bottom: 10px;
+	}
+}
+
+.read-more {
+	text-decoration: none;
+	color: $darkHighlight;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+

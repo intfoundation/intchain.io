@@ -1,0 +1,14 @@
+@mixin primary-font {
+	font-family: $primaryFont;
+	font-weight: 400;
+}
+
+@mixin primary-font-italic {
+	font-family: $primaryFont;
+	font-style: italic;
+}
+
+@mixin primary-font-bold {
+	font-family: $primaryFont;
+	font-weight: 700;
+}

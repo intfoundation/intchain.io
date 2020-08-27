@@ -1,0 +1,107 @@
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@mixin button {
+  @include transition();
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background: $highlight;
+  color: #fff;
+  border-radius: 5px;
+
+  &:hover {
+    background: #333;
+  }
+}
+
+@mixin title-underline($padding: 10px, $width: 100px) {
+  position: relative;
+  padding-bottom: $padding;
+  display: inline-block;
+
+  &::after {
+    content: '';
+    display: block;
+    width: $width;
+    height: 2px;
+    background: $highlight;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@mixin link-arrow($type) {
+  @include font-size(1.5);
+  padding-right: 36px;
+  position: relative;
+  display: inline-flex;
+
+  &::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+
+    @if $type == light {
+      background: url('assets/images/icons/chevron-right-light.svg') no-repeat center center;
+    } @else if $type == dark {
+      background: url('assets/images/icons/chevron-right-dark.svg') no-repeat center center;
+    } @else {
+      background: url('assets/images/icons/chevron-right-main.svg') no-repeat center center;
+    }
+
+    background-size: cover;
+  }
+}
+
+@mixin centre-auto {
+  margin: { 
+    left: auto;
+    right: auto;
+  }
+}
+
+@mixin hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+@mixin show {
+    visibility: visible;
+    opacity: 1;
+}
+
+@mixin transition($prop: all, $duration: 0.2s, $ease: ease) {
+    transition: $prop $duration $ease;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/*
+Media Queries
+*/
+@mixin mq-xsml {
+  @media (max-width: 379px) { @content; }
+}
+@mixin mq-sml {
+  @media (max-width: 499px) { @content; }
+}
+@mixin mq-med {
+  @media (max-width: 799px) { @content; }
+}
+@mixin mq-lrg {
+  @media (max-width: 1099px) { @content; }
+}
+@mixin mq-xlrg {
+  @media (max-width: 1200px) { @content; }
+}
