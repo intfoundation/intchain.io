@@ -46,7 +46,7 @@
       <img src="../assets/images/partners/iost-logo.png" alt="" height="50" />
     </div>
     <div class="partner">
-      <img src="../assets/images/partners/chainlink.png" alt="" height="40" />
+      <img src="../assets/images/partners/chainlink.png" alt="" height="65" />
     </div>
   </div>
 </template>
