@@ -4,9 +4,6 @@
       <img src="../assets/images/partners/slowmist.png" alt="" height="50" />
     </div>
     <div class="partner">
-      <img src="../assets/images/partners/huawei.png" alt="" height="60" />
-    </div>
-    <div class="partner">
       <img
         src="../assets/images/partners/chinatelecom.png"
         alt=""
@@ -47,6 +44,9 @@
     </div>
     <div class="partner">
       <img src="../assets/images/partners/iost-logo.png" alt="" height="50" />
+    </div>
+    <div class="partner">
+      <img src="../assets/images/partners/chainlink.png" alt="" height="65" />
     </div>
   </div>
 </template>

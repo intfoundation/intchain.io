@@ -9,13 +9,13 @@
     <div class="exchange">
       <img src="../assets/images/exchanges/bestswap-logo.png" alt="" width="146" />
     </div>
-    <div class="exchange">
+    <!--<div class="exchange">
       <img
         src="../assets/images/exchanges/allcoin-logo.png"
         alt=""
         width="146"
       />
-    </div>
+    </div>-->
     <div class="exchange">
       <img
         src="../assets/images/exchanges/coinegg-logo.png"
@@ -23,15 +23,18 @@
         width="146"
       />
     </div>
-    <div class="exchange">
+    <!--<div class="exchange">
       <img
         src="../assets/images/exchanges/coolcoin-logo.png"
         alt=""
         width="146"
       />
-    </div>
-    <div class="exchange">
+    </div>-->
+    <!--<div class="exchange">
       <img src="../assets/images/exchanges/yex-logo.png" alt="" width="146" />
-    </div>
+    </div>-->
+    <!--<div class="exchange">
+      <img src="../assets/images/exchanges/bitfinex.png" alt="" width="146" />
+    </div>-->
   </div>
 </template>

@@ -263,7 +263,7 @@ const messages = {
       },
       wallet: {
         pageTitle: `Wallet`,
-        pageSubTitle: `INT Offical Wallet. Smart, safe, and reliable.`,
+        pageSubTitle: `INT Official Wallet. Smart, safe, and reliable.`,
         webWalletTitle: `Web Wallet`,
         webWalletDesc: `The simplest method to access your INT wallet. Safe and secure over https. Check your balance, transfer tokens, stake, and vote.`,
         webWalletLink: `Visit Web Wallet`,
