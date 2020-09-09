@@ -33,8 +33,8 @@
     <!--<div class="exchange">
       <img src="../assets/images/exchanges/yex-logo.png" alt="" width="146" />
     </div>-->
-    <div class="exchange">
+    <!--<div class="exchange">
       <img src="../assets/images/exchanges/bitfinex.png" alt="" width="146" />
-    </div>
+    </div>-->
   </div>
 </template>
