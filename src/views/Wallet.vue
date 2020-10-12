@@ -54,7 +54,7 @@
               <p>{{ $t("pages.wallet.iosWalletDesc") }}</p>
               <a
                 class="download-grid__link button-link"
-                href="https://testflight.apple.com/join/xspwaSU4"
+                href="https://testflight.apple.com/join/96tH2DcO"
                 target="_blank"
                 >{{ $t("pages.wallet.iosWalletLink") }}</a
               >
