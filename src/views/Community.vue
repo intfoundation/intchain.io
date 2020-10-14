@@ -87,12 +87,14 @@
         <div class="dual-grid dual-grid--vertical-lg">
           <div class="dual-grid__item">
             <div class="dual-grid__image">
-              <img src="../assets/images/ecol.png" alt="" />
+              <img v-if="$i18n.locale === 'en'" src="../assets/images/ecol.png" alt="" />
+              <img v-else src="../assets/images/ecol-zh.png" alt="" />
             </div>
           </div>
           <div class="dual-grid__item">
             <div class="dual-grid__image">
-              <img src="../assets/images/lantu.png" alt="" />
+              <img v-if="$i18n.locale === 'en'" src="../assets/images/lantu.png" alt="" />
+              <img v-else src="../assets/images/lantu-zh.png" alt="" />
             </div>
           </div>
         </div>
@@ -102,3 +104,9 @@
   </div>
   <!-- .view-container end -->
 </template>
+
+<script>
+export default {
+  name: 'Community',
+}
+</script>
