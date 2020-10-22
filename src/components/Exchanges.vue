@@ -7,7 +7,7 @@
       <img src="../assets/images/exchanges/uniswap-logo.png" alt="" width="146" />
     </div>
     <div class="exchange">
-      <img src="../assets/images/exchanges/bestswap-logo.png" alt="" width="146" />
+      <img src="../assets/images/exchanges/bestswap-logo.png" alt="" width="100" />
     </div>
     <!--<div class="exchange">
       <img
@@ -17,11 +17,10 @@
       />
     </div>-->
     <div class="exchange">
-      <img
-        src="../assets/images/exchanges/coinegg-logo.png"
-        alt=""
-        width="146"
-      />
+      <img src="../assets/images/exchanges/coinegg-logo.png" alt="" width="146"/>
+    </div>
+    <div class="exchange">
+      <img src="../assets/images/exchanges/mxc.png" alt="" width="146"/>
     </div>
     <!--<div class="exchange">
       <img
