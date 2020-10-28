@@ -49,11 +49,11 @@
               $t("pageLink.explorer")
             }}</a>
           </div>
-          <div class="nav__item" @click="onClickNav()">
+          <!--<div class="nav__item" @click="onClickNav()">
             <a href="https://roadpro.io" target="_blank">{{
               $t("pageLink.road")
             }}</a>
-          </div>
+          </div>-->
           <div class="nav__item">
             <div id="lang-select" class="lang-select">
               <div
