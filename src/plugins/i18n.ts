@@ -86,8 +86,8 @@ const messages = {
         OBDSubTitle3: `The ecosystem is oriented around ITS (Intelligent Transportation) and IOV (Internet of Vehicle). We will gradually implement application scenarios related to the vehicle industry. The system will benefit vehicle owners, enterprises, and governments.`,
         OBDTitle4: `Intelligent driver-assistance`,
         OBDSubTitle4: `An intelligent driver-assistance device covers vehicle condition monitoring, driving assistance, driving safety, and self-service maintenance.`,
-        OBDTitle5: `IOV Tokenomics`,
-        OBDSubTitle5: `Integrated token system on the ROAD subchain - drive your vehicle, upload driving data, earn tokens.`,
+        OBDTitle5: `Unique masking algorithm`,
+        OBDSubTitle5: `Adopt INT Chain’s masking algorithm for developing an intelligent driving system without sensitive data.`,
         coreFunctions: `Core Functions`,
         coreFunctionsItems: {
           title1: `Remote Diagnostics`,
@@ -455,8 +455,8 @@ const messages = {
         OBDSubTitle3: `生态系统围绕ITS（智能交通）和IOV（车联网）展开。我们将逐步实现与汽车行业相关的应用场景。该系统将惠及车主、企业和政府。`,
         OBDTitle4: `智能行车助手`,
         OBDSubTitle4: `集车况监测、驾驶辅助、行车安全、自助维修于一体的全生命周期用车智能助手。`,
-        OBDTitle5: `车联网 Token 经济学`,
-        OBDSubTitle5: `ROAD子链上集成的 Token 系统 - 开车即挖矿，上传数据，即可获取 Token 激励。`,
+        OBDTitle5: `独特的遮罩算法`,
+        OBDSubTitle5: `采用INT Chain的屏蔽算法开发无敏感数据的智能驾驶系统。`,
         coreFunctions: `核心功能`,
         coreFunctionsItems: {
           title1: `远程诊断`,
