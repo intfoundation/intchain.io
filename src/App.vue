@@ -96,6 +96,17 @@
             <ul>
               <li class="">
                 <a
+                  href="https://discord.gg/T88VYsKU6S"
+                  target="_blank"
+                  rel="noopener"
+                  ><img
+                    src="./assets/images/social-media/Discord_wh.png"
+                    alt=""
+                    width="24"
+                /></a>
+              </li>
+              <li class="">
+                <a
                   href="https://weibo.com/u/6358909246"
                   target="_blank"
                   rel="noopener"
