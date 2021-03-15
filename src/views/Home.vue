@@ -190,6 +190,16 @@
     <div class="section section--light">
       <div class="section__content section__content--hr-top content-container">
         <div class="section__title-container">
+          <h2 class="section__title">{{ $t("pages.team.explorers") }}</h2>
+        </div>
+        <Explorers />
+      </div>
+    </div>
+    <!-- .section end -->
+
+    <div class="section section--light">
+      <div class="section__content section__content--hr-top content-container">
+        <div class="section__title-container">
           <h2 class="section__title">{{ $t("pages.home.mentionIn") }}</h2>
           <!-- <div class="section__title-sub-container">
             <div class="section__subTitle">Media mentions</div>
@@ -208,6 +218,7 @@ import ApplicationsGrid from "@/components/ApplicationsGrid.vue";
 import Partners from "@/components/Partners.vue";
 import Featured from "@/components/Featured.vue";
 import Exchanges from "@/components/Exchanges.vue";
+import Explorers from "@/components/Explorers.vue";
 
 export default {
   name: "Home",
@@ -215,7 +226,8 @@ export default {
     ApplicationsGrid,
     Partners,
     Featured,
-    Exchanges
+    Exchanges,
+    Explorers
   }
 };
 </script>

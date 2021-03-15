@@ -1497,6 +1497,65 @@
   }
 }
 
+.explorers {
+  @include centre-auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0;
+
+  @include mq-lrg {
+    justify-content: center;
+  }
+
+  @include mq-lrg {
+    padding: 40px 0 0;
+  }
+
+  .explorer {
+    display: inline-block;
+    height: 100px;
+    width: 212px;
+    margin: 4px;
+    color: #111;
+
+    &__logo {
+      height: 100px;
+      width: 212px;
+      background-color: $background;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include mq-sml {
+        justify-content: center;
+        width: 120px;
+        height: 120px;
+    
+        img {
+          width: auto;
+          height: auto;
+          max-height: 50px;
+          max-width: 90px;
+        }
+      }
+    
+      @include mq-xsml {
+        justify-content: center;
+        width: 106px;
+        height: 106px;
+        margin: 3px;
+      }
+    }
+
+    &__name {
+      @include font-size(1.6);
+      color: #111;
+      display: block;
+      padding: 10px 0;
+    }
+  }
+}
+
 .footer {
   @include primary-font;
   width: 100%;

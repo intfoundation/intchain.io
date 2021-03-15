@@ -234,7 +234,8 @@ const messages = {
         ],
         partnersTitle: `Our Partners`,
         partnersSubTitle: `Who we collaborate with to generate ideas and solutions for a stronger blockchain ecosystem`,
-        exchanges: `Exchanges`
+        exchanges: `Exchanges`,
+        explorers: `Explorers`
       },
       community: {
         pageTitle: `Community`,
@@ -598,7 +599,8 @@ const messages = {
         ],
         partnersTitle: `合作伙伴`,
         partnersSubTitle: `我们的合作伙伴。`,
-        exchanges: `交易所`
+        exchanges: `交易所`,
+        explorers: `Explorers`
       },
       community: {
         pageTitle: `社区`,
