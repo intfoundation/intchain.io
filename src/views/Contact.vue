@@ -33,7 +33,7 @@
               <p>{{ $t("pages.contact.technicalSupportDesc") }}</p>
               <a
                 class="download-grid__link button-link"
-                href="mailto:tech@intchain.io"
+                href="mailto:intchainint@gmail.com"
                 target="_blank"
                 >{{ $t("pages.contact.technicalSupportLink") }}</a
               >
@@ -50,7 +50,7 @@
               <p>{{ $t("pages.contact.cooperationDesc") }}</p>
               <a
                 class="download-grid__link button-link"
-                href="mailto:business@intchain.io"
+                href="mailto:intchainint@gmail.com"
                 target="_blank"
                 >{{ $t("pages.contact.cooperationLink") }}</a
               >

@@ -257,10 +257,10 @@ const messages = {
         pageIntro: ``,
         technicalSupportTitle: `Technical Exchange and Support`,
         technicalSupportDesc: `For any technical queries, you could either contact a community admin in the official Telegram channels or send an email to the address below. `,
-        technicalSupportLink: `E-mail: tech@intchain.io`,
+        technicalSupportLink: `E-mail: intchainint@gmail.com`,
         cooperationTitle: `Business Cooperation`,
         cooperationDesc: `We are open to new business opportunities and welcome innovative teams, companies, social organizations, and expert individuals from all disciplines around the world to chat with us.`,
-        cooperationLink: `E-mail: business@intchain.io`
+        cooperationLink: `E-mail: intchainint@gmail.com`
       },
       wallet: {
         pageTitle: `Wallet`,
@@ -623,10 +623,10 @@ const messages = {
 
         technicalSupportTitle: `技术交流与支持`,
         technicalSupportDesc: `我们欢迎您将技术方面的想法和建议，邮件给我们技术团队或联系官方客服，以获得更加深入的交流。`,
-        technicalSupportLink: `邮箱地址: tech@intchain.io`,
+        technicalSupportLink: `邮箱地址: intchainint@gmail.com`,
         cooperationTitle: `商务合作`,
         cooperationDesc: `我们欢迎全球范围内各学科创新团队、行业企业、社会机构及个人与我们联系，共同开展技术及商业领域交流合作，开辟全新市场空间。`,
-        cooperationLink: `邮箱地址: business@intchain.io`
+        cooperationLink: `邮箱地址: intchainint@gmail.com`
       },
       wallet: {
         pageTitle: `钱包`,
