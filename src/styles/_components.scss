@@ -1543,7 +1543,13 @@
         justify-content: center;
         width: 106px;
         height: 106px;
-        margin: 3px;
+
+        img {
+          width: auto;
+          height: auto;
+          max-height: 50px;
+          max-width: 80px;
+        }
       }
     }
 
@@ -1552,6 +1558,16 @@
       color: #111;
       display: block;
       padding: 10px 0;
+    }
+
+    @include mq-sml {
+      width: 120px;
+      height: 120px;
+    }
+
+    @include mq-xsml {
+      height: 106px;
+      width: 106px;
     }
   }
 }
