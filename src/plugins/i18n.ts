@@ -260,7 +260,8 @@ const messages = {
         technicalSupportLink: `E-mail: tech@intchain.io`,
         cooperationTitle: `Business Cooperation`,
         cooperationDesc: `We are open to new business opportunities and welcome innovative teams, companies, social organizations, and expert individuals from all disciplines around the world to chat with us.`,
-        cooperationLink: `E-mail: business@intchain.io`
+        cooperationLink: `E-mail: int@intchain.io`,
+        cooperationLinkTwo: `E-mail: intchainint@gmail.com`
       },
       wallet: {
         pageTitle: `Wallet`,
@@ -626,7 +627,8 @@ const messages = {
         technicalSupportLink: `邮箱地址: tech@intchain.io`,
         cooperationTitle: `商务合作`,
         cooperationDesc: `我们欢迎全球范围内各学科创新团队、行业企业、社会机构及个人与我们联系，共同开展技术及商业领域交流合作，开辟全新市场空间。`,
-        cooperationLink: `邮箱地址: business@intchain.io`
+        cooperationLink: `邮箱地址: int@intchain.io`,
+        cooperationLinkTwo: `邮箱地址: intchainint@gmail.com`
       },
       wallet: {
         pageTitle: `钱包`,
