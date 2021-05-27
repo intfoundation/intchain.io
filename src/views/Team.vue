@@ -153,17 +153,17 @@
               {{ $t("pages.team.secondaryTeam[2].desc") }}
             </div>
           </div>
-          <div class="team-item">
-            <div class="team-item-image">
-              <img src="../assets/images/team/royli.png" alt="" />
-            </div>
-            <div class="team-item-name">
-              {{ $t("pages.team.secondaryTeam[3].name") }}
-            </div>
-            <div class="team-item-description">
-              {{ $t("pages.team.secondaryTeam[3].desc") }}
-            </div>
-          </div>
+<!--          <div class="team-item">-->
+<!--            <div class="team-item-image">-->
+<!--              <img src="../assets/images/team/royli.png" alt="" />-->
+<!--            </div>-->
+<!--            <div class="team-item-name">-->
+<!--              {{ $t("pages.team.secondaryTeam[3].name") }}-->
+<!--            </div>-->
+<!--            <div class="team-item-description">-->
+<!--              {{ $t("pages.team.secondaryTeam[3].desc") }}-->
+<!--            </div>-->
+<!--          </div>-->
         </div>
         <div class="team-container team-container--spacing-bottom tertiary">
           <div
