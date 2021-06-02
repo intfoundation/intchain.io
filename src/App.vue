@@ -215,6 +215,28 @@
                     width="24"
                 /></a>
               </li>
+              <li class="">
+                <a
+                  href="https://www.coingecko.com/en/coins/intchain"
+                  target="_blank"
+                  rel="noopener"
+                  ><img
+                    src="./assets/images/social-media/Coingecko_wh.svg"
+                    alt=""
+                    width="24"
+                /></a>
+              </li>
+              <li class="">
+                <a
+                  href="https://coinmarketcap.com/currencies/int-chain/"
+                  target="_blank"
+                  rel="noopener"
+                  ><img
+                    src="./assets/images/social-media/Coinmarketcap_wh.svg"
+                    alt=""
+                    width="24"
+                /></a>
+              </li>
             </ul>
           </div>
         </div>
