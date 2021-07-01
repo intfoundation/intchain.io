@@ -45,9 +45,9 @@
             <router-link to="/wallet">{{ $t("pageLink.wallet") }}</router-link>
           </div>
           <div class="nav__item" @click="onClickNav()">
-            <a href="https://explorer.intchain.io" target="_blank">{{
+            <router-link to="/explorer">{{
               $t("pageLink.explorer")
-            }}</a>
+            }}</router-link>
           </div>
           <!--<div class="nav__item" @click="onClickNav()">
             <a href="https://roadpro.io" target="_blank">{{
@@ -278,7 +278,7 @@
                     href="https://explorer.intchain.io/"
                     target="_blank"
                     rel="noopener"
-                    >{{ $t("pageLink.explorer") }}</a
+                    >{{ $t("footer.explorer3") }}</a
                   >
                 </li>
                 <li class="footer__menu_item">
@@ -286,7 +286,39 @@
                     href="https://wallet.intchain.io/"
                     target="_blank"
                     rel="noopener"
-                    >{{ $t("footer.webWallet") }}</a
+                    >{{ $t("footer.webWallet3") }}</a
+                  >
+                </li>
+                <li class="footer__menu_item">
+                  <a
+                    href="https://test.titansexplorer.intchain.io"
+                    target="_blank"
+                    rel="noopener"
+                    >{{ $t("footer.testExplorer4") }}</a
+                  >
+                </li>
+                <li class="footer__menu_item">
+                  <a
+                    href="https://test.titanswallet.intchain.io"
+                    target="_blank"
+                    rel="noopener"
+                    >{{ $t("footer.testWebWallet4") }}</a
+                  >
+                </li>
+                <li class="footer__menu_item">
+                  <a
+                    href="https://titansexplorer.intchain.io"
+                    target="_blank"
+                    rel="noopener"
+                    >{{ $t("footer.mainExplorer4") }}</a
+                  >
+                </li>
+                <li class="footer__menu_item">
+                  <a
+                    href="https://titanswallet.intchain.io"
+                    target="_blank"
+                    rel="noopener"
+                    >{{ $t("footer.mainWebWallet4") }}</a
                   >
                 </li>
                 <li class="footer__menu_item">

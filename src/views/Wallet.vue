@@ -36,7 +36,19 @@
                 class="download-grid__link button-link"
                 href="https://wallet.intchain.io"
                 target="_blank"
-                >{{ $t("pages.wallet.webWalletLink") }}</a
+                >{{ $t("pages.wallet.webWalletLink3") }}</a
+              >
+              <a
+                class="download-grid__link button-link"
+                href="https://titanswallet.intchain.io"
+                target="_blank"
+                >{{ $t("pages.wallet.webWalletLink4") }}</a
+              >
+              <a
+                class="download-grid__link button-link"
+                href="https://test.titanswallet.intchain.io"
+                target="_blank"
+                >{{ $t("pages.wallet.webWalletLink4Test") }}</a
               >
             </div>
           </div>

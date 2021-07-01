@@ -113,7 +113,7 @@
     justify-content: flex-end;
     padding: 0 60px 0;
     z-index: 5;
-    
+
     @include mq-med {
       position: absolute;
       top: auto;
@@ -354,7 +354,7 @@
     @include mq-xsml {
       @include font-size(3.8)
     }
-    
+
     &::after {
       content: '';
       display: block;
@@ -553,7 +553,7 @@
   &__icon {
     width: 50px;
     height: 50px;
-    position: absolute; 
+    position: absolute;
     top: 20px;
     left: 0;
 
@@ -573,7 +573,7 @@
         background-image: url('assets/images/icons/hexagon.svg');
         width: 50px;
         height: 50px;
-        position: absolute; 
+        position: absolute;
         top: -14px;
         left: 8px;
         background-repeat: no-repeat;
@@ -821,7 +821,7 @@
     display: inline-block;
     width: 48px;
     height: 48px;
-    
+
     background-repeat: none;
     background-position: center center;
     background-size: cover;
@@ -937,7 +937,7 @@
         padding: 0;
       }
     }
-  
+
     .dual-sections__image {
       padding: 0 40px 0  80px;
 
@@ -970,7 +970,7 @@
 
       &--tendermint {
         justify-content: left;
-  
+
         img {
           width: 100%;
           max-width: 280px;
@@ -1146,7 +1146,9 @@
     }
   }
 
-  &__link {    
+  &__link {
+    display: flex!important;
+    margin-bottom: 5px;
     &:hover {
       text-decoration: none;
     }
@@ -1362,7 +1364,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 40px 0;
-  
+
   @include mq-lrg {
     justify-content: center;
   }
@@ -1479,7 +1481,7 @@
       justify-content: center;
       width: 120px;
       height: 120px;
-  
+
       img {
         width: auto;
         height: auto;
@@ -1487,7 +1489,7 @@
         max-width: 90px;
       }
     }
-  
+
     @include mq-xsml {
       justify-content: center;
       width: 106px;
@@ -1498,79 +1500,86 @@
 }
 
 .explorers {
-  @include centre-auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 40px 0;
-
-  @include mq-lrg {
-    justify-content: center;
+  h2 {
+    margin-bottom: 0px;
   }
+  .explorers_item {
+    @include centre-auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 0 40px;
 
-  @include mq-lrg {
-    padding: 40px 0 0;
-  }
+    @include mq-lrg {
+      justify-content: center;
+    }
 
-  .explorer {
-    display: inline-block;
-    height: 100px;
-    width: 212px;
-    margin: 4px;
-    color: #111;
+    @include mq-lrg {
+      padding: 40px 0 0;
+    }
 
-    &__logo {
+    .explorer {
+      display: inline-block;
       height: 100px;
       width: 212px;
-      background-color: $background;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      margin: 4px;
+      color: #111;
+      text-decoration: none;
+
+      &__logo {
+        height: 100px;
+        width: 212px;
+        background-color: $background;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mq-sml {
+          justify-content: center;
+          width: 120px;
+          height: 120px;
+
+          img {
+            width: auto;
+            height: auto;
+            max-height: 50px;
+            max-width: 90px;
+          }
+        }
+
+        @include mq-xsml {
+          justify-content: center;
+          width: 106px;
+          height: 106px;
+
+          img {
+            width: auto;
+            height: auto;
+            max-height: 50px;
+            max-width: 80px;
+          }
+        }
+      }
+
+      &__name {
+        @include font-size(1.6);
+        color: #111;
+        display: block;
+        padding: 10px 0;
+      }
 
       @include mq-sml {
-        justify-content: center;
         width: 120px;
         height: 120px;
-    
-        img {
-          width: auto;
-          height: auto;
-          max-height: 50px;
-          max-width: 90px;
-        }
       }
-    
+
       @include mq-xsml {
-        justify-content: center;
-        width: 106px;
         height: 106px;
-
-        img {
-          width: auto;
-          height: auto;
-          max-height: 50px;
-          max-width: 80px;
-        }
+        width: 106px;
       }
-    }
-
-    &__name {
-      @include font-size(1.6);
-      color: #111;
-      display: block;
-      padding: 10px 0;
-    }
-
-    @include mq-sml {
-      width: 120px;
-      height: 120px;
-    }
-
-    @include mq-xsml {
-      height: 106px;
-      width: 106px;
     }
   }
 }
+
 
 .footer {
   @include primary-font;
@@ -1709,7 +1718,7 @@
       transition: color 0.3s ease;
       position: relative;
       padding-left: 15px;
-      
+
       &:before {
         content: '';
         width: 11px;
@@ -1785,7 +1794,7 @@
 }
 
 .disclaimer {
-  max-width: 600px; 
+  max-width: 600px;
   margin: 0 0 100px;
 
   .list__item {
@@ -1794,7 +1803,7 @@
 }
 
 .risk-statement {
-  max-width: 600px; 
+  max-width: 600px;
   margin: 0 0 100px;
 
   .list__item {

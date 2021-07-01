@@ -134,7 +134,7 @@
           </div>
         </div>
         <div class="latest-news">
-          
+
         </div>
       </div>
     </div> -->
@@ -187,14 +187,14 @@
     </div>
     <!-- .section end -->
 
-    <div class="section section--light">
+    <!-- <div class="section section--light">
       <div class="section__content section__content--hr-top content-container">
         <div class="section__title-container">
           <h2 class="section__title">{{ $t("pages.team.explorers") }}</h2>
         </div>
         <Explorers />
       </div>
-    </div>
+    </div> -->
     <!-- .section end -->
 
     <div class="section section--light">
@@ -218,7 +218,7 @@ import ApplicationsGrid from "@/components/ApplicationsGrid.vue";
 import Partners from "@/components/Partners.vue";
 import Featured from "@/components/Featured.vue";
 import Exchanges from "@/components/Exchanges.vue";
-import Explorers from "@/components/Explorers.vue";
+// import Explorers from "@/components/Explorers.vue";
 
 export default {
   name: "Home",
@@ -226,8 +226,7 @@ export default {
     ApplicationsGrid,
     Partners,
     Featured,
-    Exchanges,
-    Explorers
+    Exchanges
   }
 };
 </script>

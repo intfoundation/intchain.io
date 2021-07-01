@@ -6,6 +6,7 @@ import NodePlan from "../views/NodePlan.vue";
 import BSN from "../views/BSN.vue";
 import Team from "../views/Team.vue";
 import Wallet from "../views/Wallet.vue";
+import Explorer from "../views/Explorers.vue";
 import Community from "../views/Community.vue";
 import Join from "../views/Join.vue";
 import Contact from "../views/Contact.vue";
@@ -39,6 +40,11 @@ const routes: Array<RouteConfig> = [
     path: "/wallet",
     name: "Wallet",
     component: Wallet
+  },
+  {
+    path: "/explorer",
+    name: "Explorer",
+    component: Explorer
   },
   {
     path: "/team",
