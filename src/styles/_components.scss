@@ -3,20 +3,37 @@
   min-height: 600px;
   width: 100%;
   background: $themeDark;
-  padding-top: 80px;
+  padding-top: 40px;
+  padding-bottom: 100px;
   color: $contentLight;
-  display: flex;
-  justify-content: center;
-  position: relative;
+  //display: flex;
+  //justify-content: center;
+  //position: relative;
+  .launch_title {
+    margin: 0 auto;
+    text-align: center;
+    color: $linkHoverDark;
+  }
+
+  @include mq-lrg {
+    min-height: 800px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
 
   @include mq-med {
-    min-height: 520px;
+    min-height: 800px;
+    padding-top: 100px;
     padding-bottom: 40px;
+  }
+
+  .count-down {
+    margin: 0 auto;
   }
 
   &__content {
     display: flex;
-
+    margin: 0 auto;
     @include mq-lrg {
       padding-left: 40px;
       padding-right: 40px;

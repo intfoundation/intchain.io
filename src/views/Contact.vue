@@ -52,11 +52,15 @@
                 class="download-grid__link button-link"
                 href="mailto:int@intchain.io"
                 target="_blank"
-                >{{ $t("pages.contact.cooperationLink") }}</a>
-              <a class="download-grid__link button-link" style="margin-top: 5px;"
-                      href="mailto:intchainint@gmail.com"
-                      target="_blank"
-              >{{ $t("pages.contact.cooperationLinkTwo") }}</a>
+                >{{ $t("pages.contact.cooperationLink") }}</a
+              >
+              <a
+                class="download-grid__link button-link"
+                style="margin-top: 5px;"
+                href="mailto:intchainint@gmail.com"
+                target="_blank"
+                >{{ $t("pages.contact.cooperationLinkTwo") }}</a
+              >
             </div>
           </div>
         </div>

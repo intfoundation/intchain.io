@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.4",
+    "jquery": "^3.6.0",
     "rss-parser": "^3.8.0",
     "shelljs": "^0.8.4",
     "vue": "^2.6.11",

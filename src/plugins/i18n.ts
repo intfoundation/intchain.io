@@ -23,6 +23,7 @@ const messages = {
     },
     pages: {
       home: {
+        launchTitle: `We are working hard to launch the 4.0 new mainnet`,
         welcomeMsg: `An Ecosystem of the Internet of Things`,
         welcomeNote: `INT is the world's first bottom up new-generation blockchain of things (BoT) communication standard and base application platform.`,
         watchVideo: `Watch Video`,
@@ -401,6 +402,7 @@ const messages = {
     },
     pages: {
       home: {
+        launchTitle: `We are working hard to launch the 4.0 new mainnet`,
         welcomeMsg: `物联网的生态系统`,
         welcomeNote: `INT是全球首个从物联网结构体系演进的角度，自下而上打造而成的新一代物联网区块链交互标准和基础应用平台。`,
         watchVideo: `观看视频`,
