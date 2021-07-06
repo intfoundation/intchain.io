@@ -1,9 +1,9 @@
 <template>
   <div class="view-container">
     <div class="hero">
-      <div class="launch_title content-container">
-        <span>{{ $t("pages.home.launchTitle") }}</span>
-      </div>
+      <!--  <div class="launch_title content-container">-->
+      <!--    <span>{{ $t("pages.home.launchTitle") }}</span>-->
+      <!--  </div>-->
       <!--  <CountDown />-->
       <div class="hero__content content-container">
         <div class="hero__header">

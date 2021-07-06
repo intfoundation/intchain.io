@@ -66,7 +66,7 @@
               <p>{{ $t("pages.wallet.iosWalletDesc") }}</p>
               <a
                 class="download-grid__link button-link"
-                href="http://app.intchain.io/downapple?randStr=x07osi9f9g"
+                href="http://app.intchain.io/down/smartwallet.html"
                 target="_blank"
                 >{{ $t("pages.wallet.iosWalletLink") }}</a
               >
