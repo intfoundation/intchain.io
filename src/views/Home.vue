@@ -4,7 +4,7 @@
       <div class="launch_title content-container">
         <span>{{ $t("pages.home.launchTitle") }}</span>
       </div>
-      <CountDown />
+<!--      <CountDown />-->
       <div class="hero__content content-container">
         <div class="hero__header">
           <h1 class="hero__title">{{ $t("pages.home.welcomeMsg") }}</h1>
@@ -223,7 +223,7 @@ import Partners from "@/components/Partners.vue";
 import Featured from "@/components/Featured.vue";
 import Exchanges from "@/components/Exchanges.vue";
 // import Explorers from "@/components/Explorers.vue";
-import CountDown from "@/components/CountDown.vue";
+// import CountDown from "@/components/CountDown.vue";
 
 export default {
   name: "Home",
@@ -232,7 +232,7 @@ export default {
     Partners,
     Featured,
     Exchanges,
-    CountDown
+    // CountDown
   }
 };
 </script>
