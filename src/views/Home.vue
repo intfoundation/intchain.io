@@ -4,7 +4,7 @@
       <div class="launch_title content-container">
         <span>{{ $t("pages.home.launchTitle") }}</span>
       </div>
-<!--      <CountDown />-->
+      <!--  <CountDown />-->
       <div class="hero__content content-container">
         <div class="hero__header">
           <h1 class="hero__title">{{ $t("pages.home.welcomeMsg") }}</h1>
@@ -231,7 +231,7 @@ export default {
     ApplicationsGrid,
     Partners,
     Featured,
-    Exchanges,
+    Exchanges
     // CountDown
   }
 };
