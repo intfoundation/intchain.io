@@ -66,7 +66,7 @@
               <p>{{ $t("pages.wallet.iosWalletDesc") }}</p>
               <a
                 class="download-grid__link button-link"
-                href="http://app.intchain.io/down/smartwallet.html"
+                href="https://app.intchain.io/down/smartwallet.html"
                 target="_blank"
                 >{{ $t("pages.wallet.iosWalletLink") }}</a
               >
@@ -84,7 +84,7 @@
               <p>{{ $t("pages.wallet.smartWalletDesc") }}</p>
               <a
                 class="download-grid__link button-link"
-                href="http://wallet.zeerong.com/5r42"
+                href="https://app.intchain.io/down/smartwallet.apk"
                 target="_blank"
                 >{{ $t("pages.wallet.smartWalletLink") }}</a
               >
