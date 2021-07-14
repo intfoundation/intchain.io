@@ -27,31 +27,57 @@
     </div>
     <div class="applications-grid__item">
       <div
-        class="applications-grid__graphic applications-grid__graphic--logistics"
+              class="applications-grid__graphic applications-grid__graphic--nft"
       >
         <div class="applications-grid__icon"><span></span></div>
       </div>
       <div class="applications-grid__title">
-        {{ $t("components.applicationsGrid.listItems[2].title") }}
+        {{ $t("components.applicationsGrid.listItems[8].title") }}
       </div>
       <div class="applications-grid__description">
-        {{ $t("components.applicationsGrid.listItems[2].desc") }}
+        {{ $t("components.applicationsGrid.listItems[8].desc") }}
       </div>
     </div>
     <div class="applications-grid__item">
       <div
-        class="applications-grid__graphic applications-grid__graphic--transportation"
+              class="applications-grid__graphic applications-grid__graphic--smartfin"
       >
         <div class="applications-grid__icon"><span></span></div>
       </div>
       <div class="applications-grid__title">
-        {{ $t("components.applicationsGrid.listItems[3].title") }}
+        {{ $t("components.applicationsGrid.listItems[9].title") }}
       </div>
       <div class="applications-grid__description">
-        {{ $t("components.applicationsGrid.listItems[3].desc") }}
+        {{ $t("components.applicationsGrid.listItems[9].desc") }}
       </div>
     </div>
     <template v-if="showFull">
+      <div class="applications-grid__item">
+        <div
+                class="applications-grid__graphic applications-grid__graphic--logistics"
+        >
+          <div class="applications-grid__icon"><span></span></div>
+        </div>
+        <div class="applications-grid__title">
+          {{ $t("components.applicationsGrid.listItems[2].title") }}
+        </div>
+        <div class="applications-grid__description">
+          {{ $t("components.applicationsGrid.listItems[2].desc") }}
+        </div>
+      </div>
+      <div class="applications-grid__item">
+        <div
+                class="applications-grid__graphic applications-grid__graphic--transportation"
+        >
+          <div class="applications-grid__icon"><span></span></div>
+        </div>
+        <div class="applications-grid__title">
+          {{ $t("components.applicationsGrid.listItems[3].title") }}
+        </div>
+        <div class="applications-grid__description">
+          {{ $t("components.applicationsGrid.listItems[3].desc") }}
+        </div>
+      </div>
       <div class="applications-grid__item">
         <div
           class="applications-grid__graphic applications-grid__graphic--building"

@@ -360,6 +360,14 @@ const messages = {
           {
             title: `Charity`,
             desc: `Realizing the openness and transparency of charity financial information`
+          },
+          {
+            title: `NFT`,
+            desc: `Digital art, games, digital art market and physical assets (certificates, bonds) on the chain, confirmation and circulation`
+          },
+          {
+            title: `DeFi`,
+            desc: `Diversified decentralized financial products enrich product ecology`
           }
         ]
       }
@@ -735,6 +743,14 @@ const messages = {
           {
             title: `慈善公益`,
             desc: `实现慈善公益类财务信息的公开透明`
+          },
+          {
+            title: `NFT`,
+            desc: `数字艺术品、游戏、数字艺术品市场以及物理资产（证件、债券）上链、确权、流转`
+          },
+          {
+            title: `去中心化金融`,
+            desc: `多样化的去中心化金融产品丰富产品生态`
           }
         ]
       }
