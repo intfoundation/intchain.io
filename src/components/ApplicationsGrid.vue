@@ -26,9 +26,7 @@
       </div>
     </div>
     <div class="applications-grid__item">
-      <div
-              class="applications-grid__graphic applications-grid__graphic--nft"
-      >
+      <div class="applications-grid__graphic applications-grid__graphic--nft">
         <div class="applications-grid__icon"><span></span></div>
       </div>
       <div class="applications-grid__title">
@@ -40,7 +38,7 @@
     </div>
     <div class="applications-grid__item">
       <div
-              class="applications-grid__graphic applications-grid__graphic--smartfin"
+        class="applications-grid__graphic applications-grid__graphic--smartfin"
       >
         <div class="applications-grid__icon"><span></span></div>
       </div>
@@ -51,23 +49,23 @@
         {{ $t("components.applicationsGrid.listItems[9].desc") }}
       </div>
     </div>
-      <div class="applications-grid__item">
-          <div
-                  class="applications-grid__graphic applications-grid__graphic--logistics"
-          >
-              <div class="applications-grid__icon"><span></span></div>
-          </div>
-          <div class="applications-grid__title">
-              {{ $t("components.applicationsGrid.listItems[2].title") }}
-          </div>
-          <div class="applications-grid__description">
-              {{ $t("components.applicationsGrid.listItems[2].desc") }}
-          </div>
+    <div class="applications-grid__item">
+      <div
+        class="applications-grid__graphic applications-grid__graphic--logistics"
+      >
+        <div class="applications-grid__icon"><span></span></div>
       </div>
+      <div class="applications-grid__title">
+        {{ $t("components.applicationsGrid.listItems[2].title") }}
+      </div>
+      <div class="applications-grid__description">
+        {{ $t("components.applicationsGrid.listItems[2].desc") }}
+      </div>
+    </div>
     <template v-if="showFull">
       <div class="applications-grid__item">
         <div
-                class="applications-grid__graphic applications-grid__graphic--transportation"
+          class="applications-grid__graphic applications-grid__graphic--transportation"
         >
           <div class="applications-grid__icon"><span></span></div>
         </div>
