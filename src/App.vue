@@ -364,6 +364,45 @@
                 </li>
               </ul>
             </div>
+            <div class="footer__menu_block">
+              <div class="footer__menu_caption">
+                {{ $t("footer.guidelinesV4") }}
+              </div>
+              <ul class="footer__menu_list">
+                <li class="footer__menu_item">
+                  <a
+                    :href="$t('footer.guidelinesLinks.mappingGuide')"
+                    target="_blank"
+                    rel="noopener"
+                    >{{ $t("footer.guidelinesLabel.mappingGuide") }}</a
+                  >
+                </li>
+                <li class="footer__menu_item">
+                  <a
+                    :href="$t('footer.guidelinesLinks.metaMask')"
+                    target="_blank"
+                    rel="noopener"
+                    >{{ $t("footer.guidelinesLabel.metaMask") }}</a
+                  >
+                </li>
+                <li class="footer__menu_item">
+                  <a
+                    :href="$t('footer.guidelinesLinks.imtoken')"
+                    target="_blank"
+                    rel="noopener"
+                    >{{ $t("footer.guidelinesLabel.imtoken") }}</a
+                  >
+                </li>
+                <li class="footer__menu_item">
+                  <a
+                    :href="$t('footer.guidelinesLinks.nodeMigration')"
+                    target="_blank"
+                    rel="noopener"
+                    >{{ $t("footer.guidelinesLabel.nodeMigration") }}</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

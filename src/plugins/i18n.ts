@@ -19,7 +19,8 @@ const messages = {
       road: `ROAD`,
       disclaimer: `Disclaimer`,
       riskstatement: `Risk Statement`,
-      wallet: `Wallet`
+      wallet: `Wallet`,
+      grant: `Grant`
     },
     pages: {
       home: {
@@ -324,6 +325,10 @@ const messages = {
             desc: `INT platform may break down due to various reasons, which indicated that it could not provide the normal services in such situation.`
           }
         ]
+      },
+      grant: {
+        pageTitle: `INT Grants`,
+        pageSubTitle: `INT Grants Subtitle`
       }
     },
     components: {
@@ -388,7 +393,20 @@ const messages = {
       whitepaperLink: `https://intchain.io/whitepaper/INT-whitepaper-release-EN.pdf`,
       bsnLink: `BSN global website`,
       gitHub: `GitHub`,
-      copyright: `All rights reserved`
+      copyright: `All rights reserved`,
+      guidelinesV4: `4.0 Related Guidelines`,
+      guidelinesLabel: {
+        mappingGuide: `Mapping Guide`,
+        metaMask: `MetaMask Wallet Usage Guide`,
+        imtoken: `Imtoken Wallet Usage Guide`,
+        nodeMigration: `Guide to Node Migration`
+      },
+      guidelinesLinks: {
+        mappingGuide: `https://intchain.io/guidelines/INT-mapping-guide-4.0-EN.pdf`,
+        metaMask: `https://intchain.io/guidelines/INT-version-MetaMask-user-guide-EN.pdf`,
+        imtoken: `https://intchain.io/guidelines/INT-version-imtoken-wallet-usage-guide-EN.pdf`,
+        nodeMigration: `https://intchain.io/guidelines/Guide-to-Node-Migration-from-INT-3.0-to-INT-4.0-EN.pdf`
+      }
     }
   },
   zhCN: {
@@ -406,7 +424,8 @@ const messages = {
       road: `ROAD`,
       disclaimer: `免责声明`,
       riskstatement: `风险声明`,
-      wallet: `钱包`
+      wallet: `钱包`,
+      grant: `开发基金`
     },
     pages: {
       home: {
@@ -707,6 +726,10 @@ const messages = {
             desc: `INT平台可能会因为各种原因出现故障，无法正常提供服务。`
           }
         ]
+      },
+      grant: {
+        pageTitle: `INT 开发基金`,
+        pageSubTitle: `INT 开发基金 副标题`
       }
     },
     components: {
@@ -772,7 +795,20 @@ const messages = {
       whitepaperLink: `https://intchain.io/whitepaper/INT-whitepaper-release-CN.pdf`,
       bsnLink: `BSN 官网`,
       gitHub: `GitHub`,
-      copyright: `All rights reserved`
+      copyright: `All rights reserved`,
+      guidelinesV4: `4.0 相关指南`,
+      guidelinesLabel: {
+        mappingGuide: `映射指南`,
+        metaMask: `小狐狸钱包使用指南`,
+        imtoken: `移动端钱包使用指南`,
+        nodeMigration: `节点迁移指南`
+      },
+      guidelinesLinks: {
+        mappingGuide: `https://intchain.io/guidelines/INT-mapping-guide-4.0-CN.pdf`,
+        metaMask: `https://intchain.io/guidelines/INT-version-MetaMask-user-guide-CN.pdf`,
+        imtoken: `https://intchain.io/guidelines/INT-version-imtoken-wallet-usage-guide-CN.pdf`,
+        nodeMigration: `https://intchain.io/guidelines/Guide-to-Node-Migration-from-INT-3.0-to-INT-4.0-CN.pdf`
+      }
     }
   }
 };
