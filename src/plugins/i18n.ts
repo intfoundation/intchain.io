@@ -20,6 +20,7 @@ const messages = {
       disclaimer: `Disclaimer`,
       riskstatement: `Risk Statement`,
       wallet: `Wallet`,
+      consensus: `Consensus`,
       grant: `Grant`
     },
     pages: {
@@ -327,8 +328,72 @@ const messages = {
         ]
       },
       grant: {
-        pageTitle: `INT Grants`,
-        pageSubTitle: `INT Grants Subtitle`
+        pageTitle: `INT Grants Funding the \nNext Decentralized Idea`,
+        pageSubTitle: `We provide $10K-100K free R&D funds to support every creative idea and project no matter it's building on INTChain or not.`,
+        grantFormLink: `https://forms.gle/wNwtR4dyCLuqaBjP8`,
+        grantFormLinkLabel: `APPLY NOW`,
+        strengths: {
+          title: `OUR ADVANTAGES`,
+          items: [
+            {
+              id: `strengthsItem1`,
+              imgUrl: `../assets/images/grant/2.png`,
+              labelStr: `Capital Support`,
+              spanStr: `$10K-100K seed funding round to kickstart your idea based on your needs`
+            },
+            {
+              id: `strengthsItem2`,
+              imgUrl: `../assets/images/grant/3.png`,
+              labelStr: `Subsequent Funding`,
+              spanStr: `Get funds from INT.io Labs, INT.io Startup and industry-leading VCs`
+            },
+            {
+              id: `strengthsItem3`,
+              imgUrl: `../assets/images/grant/4.png`,
+              labelStr: `Interoperable Resources`,
+              spanStr: `Dedicated marketing and HR activities provided by INT.io's ecosystem`
+            },
+            {
+              id: `strengthsItem4`,
+              imgUrl: `../assets/images/grant/5.png`,
+              labelStr: `Listing Support`,
+              spanStr: `Priority listing on INT.io, getting exposure from over 6 million users`
+            },
+            {
+              id: `strengthsItem5`,
+              imgUrl: `../assets/images/grant/6.png`,
+              labelStr: `Technical Support`,
+              spanStr: `Access to our tech team, supporting you with all the things required`
+            },
+            {
+              id: `strengthsItem6`,
+              imgUrl: `../assets/images/grant/7.png`,
+              labelStr: `Ecological Prosperity`,
+              spanStr: `Strategic partnerships with over 100 projects, sharing resources and working together`
+            }
+          ]
+        },
+        expectations: {
+          title: `OUR EXPECTATION`,
+          items: [
+            { id: `expectationsItem1`, label: `DEX` },
+            { id: `expectationsItem2`, label: `Loan` },
+            { id: `expectationsItem3`, label: `Derivatives` },
+            { id: `expectationsItem4`, label: `Yield aggregator` },
+            { id: `expectationsItem5`, label: `Cross-Chain Assets` },
+            { id: `expectationsItem6`, label: `Oracle` }
+          ],
+          desc: `Diversity is an important aspect of every ecosystem, and we value every idea.`
+        },
+        global: {
+          title: `A blockchain dedicated to fund safety and decentralized exchange.`,
+          int: ``,
+          imgUrl: `/images/grant/9-en.png`
+        }
+      },
+      consensus: {
+        pageTitle: `INT Consensus`,
+        pageSubTitle: `INT Consensus Subtitle`
       }
     },
     components: {
@@ -399,13 +464,15 @@ const messages = {
         mappingGuide: `Mapping Guide`,
         metaMask: `MetaMask Wallet Usage Guide`,
         imtoken: `Imtoken Wallet Usage Guide`,
-        nodeMigration: `Guide to Node Migration`
+        nodeMigration: `Guide to Node Migration`,
+        voting: `INT 4.0 Staking and voting demonstration`
       },
       guidelinesLinks: {
         mappingGuide: `https://intchain.io/guidelines/INT-mapping-guide-4.0-EN.pdf`,
         metaMask: `https://intchain.io/guidelines/INT-version-MetaMask-user-guide-EN.pdf`,
         imtoken: `https://intchain.io/guidelines/INT-version-imtoken-wallet-usage-guide-EN.pdf`,
-        nodeMigration: `https://intchain.io/guidelines/Guide-to-Node-Migration-from-INT-3.0-to-INT-4.0-EN.pdf`
+        nodeMigration: `https://intchain.io/guidelines/Guide-to-Node-Migration-from-INT-3.0-to-INT-4.0-EN.pdf`,
+        voting: `https://youtu.be/yt9aLx7KHgI`
       }
     }
   },
@@ -425,6 +492,7 @@ const messages = {
       disclaimer: `免责声明`,
       riskstatement: `风险声明`,
       wallet: `钱包`,
+      consensus: `共识`,
       grant: `开发基金`
     },
     pages: {
@@ -728,8 +796,72 @@ const messages = {
         ]
       },
       grant: {
-        pageTitle: `INT 开发基金`,
-        pageSubTitle: `INT 开发基金 副标题`
+        pageTitle: `INT 助力每一个加密想法`,
+        pageSubTitle: `我们重视每一个有创意的想法，无论您的项目是否建立在 INTChain上，都有机会获得 $10K-100K开发基金。`,
+        grantFormLink: `https://forms.gle/ivs92Kx7uKnnYvFD7`,
+        grantFormLinkLabel: `立即申请`,
+        strengths: {
+          title: `我们的优势`,
+          items: [
+            {
+              id: `strengthsItem1`,
+              imgUrl: `../assets/images/grant/2.png`,
+              labelStr: `基金支持`,
+              spanStr: `无偿提供 $10K-100K 的基金，助力创意落地`
+            },
+            {
+              id: `strengthsItem2`,
+              imgUrl: `../assets/images/grant/3.png`,
+              labelStr: `融资机会`,
+              spanStr: `更多的机会获得 INT.io Labs,Startup和行业领先 VC的青睐`
+            },
+            {
+              id: `strengthsItem3`,
+              imgUrl: `../assets/images/grant/4.png`,
+              labelStr: `资源共享`,
+              spanStr: `享有 INT.io十大生态维度带来的品牌曝光、市场和人才招募等资源`
+            },
+            {
+              id: `strengthsItem4`,
+              imgUrl: `../assets/images/grant/5.png`,
+              labelStr: `流量支持`,
+              spanStr: `优先上线 INT.io交易平台，获取超过 600万用户带来的流动性`
+            },
+            {
+              id: `strengthsItem5`,
+              imgUrl: `../assets/images/grant/6.png`,
+              labelStr: `技术支持`,
+              spanStr: `与 INTChain的全球技术专家团队深度交流，获得技术支持`
+            },
+            {
+              id: `strengthsItem6`,
+              imgUrl: `../assets/images/grant/7.png`,
+              labelStr: `生态红利`,
+              spanStr: `INT.io已与超 100+项目达成战略合作，共享生态红利`
+            }
+          ]
+        },
+        expectations: {
+          title: `我们的期望`,
+          items: [
+            { id: `expectationsItem1`, label: `DEX` },
+            { id: `expectationsItem2`, label: `借贷` },
+            { id: `expectationsItem3`, label: `衍生品` },
+            { id: `expectationsItem4`, label: `收益聚合` },
+            { id: `expectationsItem5`, label: `资产跨链` },
+            { id: `expectationsItem6`, label: `预言机` }
+          ],
+          desc: `对于开发者的项目，我们不限定项目的范围和类型。因为我们深知的多样性对于生态来说至关重要。`
+        },
+        global: {
+          title: `全球最具发展潜力的真·创新公链`,
+          int: `INT Chain`,
+          imgUrl: `/images/grant/9.png`
+        }
+      },
+      consensus: {
+        pageTitle: `INT 共识`,
+        pageSubTitle: `INT 共识 副标题`
       }
     },
     components: {
@@ -801,13 +933,15 @@ const messages = {
         mappingGuide: `映射指南`,
         metaMask: `小狐狸钱包使用指南`,
         imtoken: `移动端钱包使用指南`,
-        nodeMigration: `节点迁移指南`
+        nodeMigration: `节点迁移指南`,
+        voting: `INT 4.0 节点投票演示`
       },
       guidelinesLinks: {
         mappingGuide: `https://intchain.io/guidelines/INT-mapping-guide-4.0-CN.pdf`,
         metaMask: `https://intchain.io/guidelines/INT-version-MetaMask-user-guide-CN.pdf`,
         imtoken: `https://intchain.io/guidelines/INT-version-imtoken-wallet-usage-guide-CN.pdf`,
-        nodeMigration: `https://intchain.io/guidelines/Guide-to-Node-Migration-from-INT-3.0-to-INT-4.0-CN.pdf`
+        nodeMigration: `https://intchain.io/guidelines/Guide-to-Node-Migration-from-INT-3.0-to-INT-4.0-CN.pdf`,
+        voting: `https://v.qq.com/x/page/c3261ezzuvt.html`
       }
     }
   }
