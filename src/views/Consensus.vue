@@ -107,7 +107,7 @@ export default {
     methods: {
         handleScroll() {
             this.currentScroll = window.pageYOffset //表示当前滚动的位置
-            if (this.currentScroll >= this.$refs.con1ref.offsetTop + 20) { //当前滚动位置到达testref的时候，显示div（100作为调整用）
+            if ((this.currentScroll >= (this.$refs.con1ref.offsetTop + 20))&& (this.currentScroll <= this.$refs.con1ref.offsetHeight)) {
                 this.isFixed = true;
             }else {
                 this.isFixed = false;
