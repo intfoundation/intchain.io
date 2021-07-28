@@ -1721,7 +1721,9 @@
   }
 
   &__menu_block {
-    margin: 0 30px;
+    //margin: 0 30px;
+    margin: 0 15px;
+    flex: 1;
 
     @include mq-med {
       margin: 0 0 30px;
@@ -1843,3 +1845,114 @@
     margin-bottom: 20px;
   }
 }
+
+.consensus {
+  &-header-section__subContent {
+    position: relative;
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      padding: 15px 0;
+    }
+    ul,li {
+      position: relative;
+      padding: 4px 0;
+      line-height: 1.6;
+    }
+    ul {
+      padding-inline-start: 30px;
+      list-style-type: none;
+    }
+    li:before {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: #2b3954;
+      font-size: 60px;
+      width: 6px;
+      height: 6px;
+      left: -20px;
+      top: 15px;
+      box-sizing: border-box;
+    }
+  }
+  &__row {
+    display: flex;
+  }
+  &__menu {
+    width: 25%;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+    @include mq-lrg {
+      display: none;
+    }
+    .fixed {
+      position: fixed;
+      top: 70px;
+      z-index: 1;
+    }
+    .pagenav {
+      width: 100%;
+      max-width: 250px;
+      a {
+        display: block;
+        text-decoration: none;
+        padding: 8px 12px;
+        font-size: 14px;
+        font-weight: 400;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        color: #8e8e98;
+        transition: all .2s ease;
+        &:hover {
+          cursor: pointer;
+        }
+
+        &.active {
+          position: relative;
+          color: #000;
+        }
+
+        &.active:before {
+          content: "";
+          position: absolute;
+          width: 4px;
+          height: 32px;
+          background: $navHighlight;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
+      }
+    }
+  }
+  &__content {
+    width: 75%;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+    @include mq-lrg {
+      width: 100%;
+    }
+    &-item {
+      padding-bottom: 30px;
+    }
+    &-title {
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 1.4;
+      margin-bottom: 15px;
+    }
+    &-p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+  }
+}
+

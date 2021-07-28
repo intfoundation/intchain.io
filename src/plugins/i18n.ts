@@ -20,6 +20,7 @@ const messages = {
       disclaimer: `Disclaimer`,
       riskstatement: `Risk Statement`,
       wallet: `Wallet`,
+      consensus: `Consensus`,
       grant: `Grant`
     },
     pages: {
@@ -57,7 +58,8 @@ const messages = {
         partners: `Our partners`,
         partnersSubheader: `Who we collaborate with to generate ideas and solutions for a stronger blockchain ecosystem.`,
         partnersViewMore: `View our team`,
-        mentionIn: `Mentioned in`
+        mentionIn: `Mentioned in`,
+        toConsensusBtn: `Learn More`
       },
       applications: {
         pageTitle: `Applications`,
@@ -326,9 +328,43 @@ const messages = {
           }
         ]
       },
-      grant: {
-        pageTitle: `INT Grants`,
-        pageSubTitle: `INT Grants Subtitle`
+      consensus: {
+        pageTitle: `What is IPBFT?`,
+        pageSubTitle: `IPBFT is the consensus algorithm for INT4.0. If you compare a blockchain to a car, the consensus mechanism is the engine that powers the car.\nIPBFT is a faster, more scalable and more secure algorithm`,
+        t1: `Improving IPBFT is based on PBFT (Practical Byzantine Algorithm):`,
+        li1: `Linear communication: PDBFT2.0 achieves linear worst-case communication volume, in contract to PBFT’s O(n4)`,
+        li2: `Random leader selection: the leader for each round in IPBFT is selected by a verifiable random function (VRF), which protects the leader from predictable attacks`,
+        q1T: `What is consensus?`,
+        q1A: [
+            `The consensus mechanism is the core of distributed technology. In a decentralized environment where there is no central entity to verify transactions, the consensus protocol ensures that all participants of the network reach agreement. The entire network verifies transactions in a completely trustless manner.`
+        ],
+        q2T: `What PBFT (Practical Byzantine Algorithm)?`,
+        q2A: [
+            `Practical Byzantine Fault Tolerance is a model for reaching consensus by making multiple computers behave consistently, a technique known as state machine replication.`,
+            `Nodes reach a consensus on the decision by passing messages about the decision between each other-such as the validity of the block in the blockchain. In this system, security increases with the number of honest nodes. Honest nodes agree to correct decisions and reject wrong decisions made by malicious nodes, as long as the number of malicious nodes is less than one-third of the total.`,
+            `pBFT systems are energy efficient; they do not require high computing resources or a lot of energy to operate. In addition, pBFTs can reach consensus quickly because all nodes are constantly communicating with each other and do not require multiple confirmations. Once the nodes agree on a decision, the transaction is complete.`,
+            `This process can be simplified to four steps.`,
+            `pBFT uses a voting mechanism to elect a leader node in a round-robin format.`,
+            `The leader initiates the decision and broadcasts it to the secondary nodes.`,
+            `All nodes, including the leader node and the auxiliary nodes, send responses.`,
+            `A response is considered valid when ⅔ + 1 node sends the same response.`,
+            `If the leader act maliciously, it can be removed by most nodes.`
+        ],
+        q3T: `IPBFT consensus versus PBFT consensus`,
+        q3A: [
+            `The PBFT protocol is divided into three phases: pre-prepare, prepare and commit. In the prepare and commit phase, each validator must broadcast its vote for the proposed block. After receiving 2F+1 commit votes, each validator completes the block. Due to the broadcast of votes, the complexity of communication grows with the squared number of nodes O(n^2)`,
+            `To reduce this, IPBFT creates a leader for each round of voting, collecting votes from all verifiers. In addition, IPBFT uses BLS threshold signatures to achieve linear communication. The (n,t) threshold signature on a message m is a single constant-sized aggregate signature that passes verification if and only if there are at least t signatures m among the n participants. Note that the verifier does not need to know the identity of t signatures. Each collector derives an (n, 2f+1)-threshold signature after collecting 2f+1 votes. A threshold signature can be thought of as a single signature of constant size. The collector then broadcasts the threshold signature and each verifier can confirm that more than 2F+1 verifiers have voted for the block by verifying the threshold signature.`,
+            `In classic PBFT, two rounds of voting are used to ensure the security and activity of the protocol. However, in IPBFT, a single round of voting allows this to be achieved without losing security or activity. Since each vote on the current block specifies the hash of the previous block, each vote is also a confirmation of the previous block. Thus, a vote for the current block is a simultaneous prepare-vote and commit-vote for both the current block and the previous block. if the validator collects more than 2F+1 votes for the current block, the previous block will complete immediately. Thus, each block is finalised after two rounds of voting, which ensures the security of the network.`,
+            `Similar to PBFT, the view change sub-protocol of IPBFT is triggered when the verifier cannot reach an agreement in a round. This may be due to an asynchronous network (for example, when more than 1/3 n nodes are offline), or there is a malicious collector/leader. IPBFT handles view changes using the Linear View Change (LVC) algorithm. The essence of LVC is that the leader of the next round sends its highest commit certificate instead of all commit certificates, resulting in an O(n)-fold reduction in the amount of transmission when a view changes. In PBFT or tendermint, each leader is determined by a round scheduling that can be predicted by the opponent. IPBFT avoids this by using a VRF random selection collector (leader). A VRF is a pseudo-random generator whose output is verifiable (i.e. whether a given number is indeed the output of the VRF), random, uniformly distributed and unpredictable. In the case of a random leader, the leader of the next round is unpredictable and the opponent cannot attack the leader in advance.`
+        ],
+        q4T: `How does IPBFT work?`,
+        q4A: [
+            `IPBFT uses a verifiable random function (VRF)-based password tossing lottery to randomly elect verifiers, while the node with the higher vote weight ratio will have a higher chance of getting out of the block, which will ensure greater security and fairness. In terms of on-chain governance, multiple governance parameters are introduced and a punishment mechanism for misbehaviour is added. The governance parameters can be dynamically adjusted on the chain through a referendum, making the community governance process more efficient and fair.The specific operation process is as follows:`,
+            `1.Firstly, the system elects the outgoing node for each round through VRF, then the outgoing node will first propose the block and broadcast it to the other gods nodes, then the consensus among the gods nodes will be conducted through IPBFT consensus algorithm, and it needs to meet more than 2/3 of the total votes to agree in order for the block to come out properly.`,
+            `2.Every other cycle, the gods nodes will be re-elected based on the number of votes they have obtained, and the node with the top 25 votes will be the new round of block producers.`,
+            `3.Every normal block will get a certain block reward. The block reward includes a fixed block reward and half of the handling fee. The other half of the handling fee will be directly destroyed. The gods node can set a reward percentage, each block reward will be divided proportionally between the block producer and the INT holders who voted for that node.`,
+            `4.Every INT holder can participate or propose a system referendum to decide the main affairs and development of INT, each referendum will be led by the INT Foundation after the vote is completed, and will be promoted together with the community.`
+        ]
       }
     },
     components: {
@@ -399,13 +435,15 @@ const messages = {
         mappingGuide: `Mapping Guide`,
         metaMask: `MetaMask Wallet Usage Guide`,
         imtoken: `Imtoken Wallet Usage Guide`,
-        nodeMigration: `Guide to Node Migration`
+        nodeMigration: `Guide to Node Migration`,
+        voting: `INT 4.0 Staking and voting demonstration`
       },
       guidelinesLinks: {
         mappingGuide: `https://intchain.io/guidelines/INT-mapping-guide-4.0-EN.pdf`,
         metaMask: `https://intchain.io/guidelines/INT-version-MetaMask-user-guide-EN.pdf`,
         imtoken: `https://intchain.io/guidelines/INT-version-imtoken-wallet-usage-guide-EN.pdf`,
-        nodeMigration: `https://intchain.io/guidelines/Guide-to-Node-Migration-from-INT-3.0-to-INT-4.0-EN.pdf`
+        nodeMigration: `https://intchain.io/guidelines/Guide-to-Node-Migration-from-INT-3.0-to-INT-4.0-EN.pdf`,
+        voting: `https://youtu.be/yt9aLx7KHgI`
       }
     }
   },
@@ -425,6 +463,7 @@ const messages = {
       disclaimer: `免责声明`,
       riskstatement: `风险声明`,
       wallet: `钱包`,
+      consensus: `共识`,
       grant: `开发基金`
     },
     pages: {
@@ -462,7 +501,8 @@ const messages = {
         partners: `合作伙伴`,
         partnersSubheader: `我们的合作伙伴。`,
         partnersViewMore: `查看我们的团队`,
-        mentionIn: `媒体报道`
+        mentionIn: `媒体报道`,
+        toConsensusBtn: `了解更多`
       },
       applications: {
         pageTitle: `行业应用`,
@@ -727,9 +767,43 @@ const messages = {
           }
         ]
       },
-      grant: {
-        pageTitle: `INT 开发基金`,
-        pageSubTitle: `INT 开发基金 副标题`
+      consensus: {
+        pageTitle: `什么是IPBFT？`,
+        pageSubTitle: `IPBFT是INT4.0的共识算法，如果把区块链比作一辆车，那么共识机制就是为汽车提供动力的引擎。\nIPBFT是一种更快、更具可扩展性和更安全的选择。`,
+        t1: `IPBFT 基于PBFT（实用拜占庭算法）改进了：`,
+        li1: `线性通信:IPBFT实现线性最坏情况下的通信量，与PBFT的O(n4)收缩`,
+        li2: `随机领导者选择：IPBFT中每一轮的领导者都是通过一个可验证的随机函数(VRF)来选择的，这样可以防止领导者受到可预测的攻击`,
+        q1T: `什么是共识？`,
+        q1A: [
+            `共识机制是分布式技术的核心，在没有中央实体验证交易的去中心化环境中，共识协议确保网络的所有参与者达成一致：整个网络以完全去信任的方式验证交易。`
+        ],
+        q2T: `什么PBFT（实用拜占庭算法）？`,
+        q2A: [
+          `实用拜占庭容错是一种通过使多台计算机表现一致来达成共识的模型，这种技术称为状态机复制。`,
+          `节点通过在彼此之间传递有关决策的消息来就决策达成共识——例如区块链中区块的有效性。在这个系统中，安全性随着诚实节点的数量而增加。诚实节点同意正确的决策，拒绝恶意节点提出的错误决策，只要恶意节点的数量少于总数的三分之一。`,
+          `pBFT 系统节能；它们不需要高计算资源或大量能量来运行。此外，pBFT 可以快速达成共识，因为所有节点都在不断地相互通信，不需要多次确认。一旦节点就决定达成一致，交易就完成了。`,
+          `达成共识可以简化为四步：`,
+          `pBFT 使用投票机制以循环方式选举领导节点。`,
+          `领导者发起决策并将其广播给辅助节点。`,
+          `所有节点，包括领导节点和辅助节点，都发送响应。`,
+          `当 ⅔ + 1 个节点发送相同的响应时，该响应被认为是有效的。`,
+          `如果领导者有恶意行为，它可以被大多数节点删除。`
+        ],
+        q3T: `IPBFT共识与PBFT共识对比`,
+        q3A: [
+          `PBFT协议分为三个阶段：预先准备、准备和提交。在prepare and commit阶段，每个验证器都必须广播其对所建议的块的投票。在收到2F+1个提交投票后，每个验证器完成该块。由于投票的广播，通信的复杂度随着节点数的平方O(n^2)而增长`,
+          `为了减少这种情况，IPBFT为每一轮投票建立一个领导者，从所有验证者那里收集选票。另外，IPBFT采用BLS门限签名实现线性通信。消息m上的（n,t）门限签名是单个恒定大小的聚合签名，当且仅当n个参与者中至少有t个签名m时，它才能通过验证。注意，验证者不需要知道t个签名者的身份。每个收集器在收集2f+1票后导出一个(n，2f+1)-门限签名。门限签名可以看作是一个大小不变的单个签名。然后，收集器广播门限签名，每个验证器可以通过验证门限签名来确认超过2F+1个验证器已经投票支持该块。`,
+          `在经典的PBFT中，为了保证协议的安全性和活性，采用了两轮投票。然而，在IPBFT中，单轮投票可以在不失去安全性或活性的情况下实现这一点。由于对当前块的每次投票都指定了前一个块的哈希值，所以每次投票也是对前一个块的确认。因此，对当前块的投票是同时对当前块和前一个块的prepare-vote和commit-vote。如果验证器为当前块收集了超过2F+1票，则前一个块将立即完成。因此，每个模块都经过两轮投票后最终确定，这保证了网络的安全性。`,
+          `与PBFT类似，IPBFT的视图更改子协议是在验证者无法在一轮中达成一致时触发的。这可能是由于异步网络（例如，当超过1/3 n个节点脱机时），或者存在恶意收集者/领导者。IPBFT使用线性视图更改(LVC)算法处理视图更改。LVC的本质是由下一轮的领先者发送其最高的提交证书而不是所有的提交证书，使得视图变化时的传输量减少了O(n)倍。在PBFT或tendermint中，每个领导者都是通过一个可以被对手预测的循环调度来决定的。IPBFT通过使用VRF随机选择收集器（领导者）来避免这种情况。VRF是一个伪随机发生器，它的输出是可验证的（即给定的数字是否确实是VRF的输出）、随机的、均匀分布的和事先不可预测的。在随机领导者的情况下，下一轮的领导者是不可预测的，对手不能提前攻击领导者。`
+        ],
+        q4T: `IPBFT是如何运作的？`,
+        q4A: [
+          `IPBFT采用基于可验证随机函数（VRF）的密码掷签来随机选举验证者，同时票数权重比例越大的节点获得出块的几率也会更大，可以更大程度的保证安全与公平。在链上治理方面，引入多个治理参数，加入了作恶惩罚机制，治理参数可以在链上通过公投进行动态调整，社区治理过程将会更加高效和公正，具体的运行流程如下：`,
+          `1.首先系统通过VRF选出每轮的出块节点，然后出块节点会首先提议区块并广播给其他的众神节点，然后众神节点间通过IPBFT共识算法进行共识，需要满足超过2/3的总票数同意，区块才能正常出来。`,
+          `2.每隔一个周期，众神节点会根据自身的获得票数进行重新选举，票数排在前25名的节点将是新一轮的出块节点。`,
+          `3.每出来一个正常的区块都会获得一定的区块奖励，区块奖励包含固定区块奖励和手续费的一半两部分，手续费的另一半将被直接销毁，众神节点可以设定一个的佣金比例，每个区块奖励将按比例分给出块节点和投票给该节点的INT持币者。`,
+          `4.每一个INT的持币用户都可以参与或者提议系统公投，来决议INT的主要事务和发展，每一个公投在表决结束后，将由INT基金会牵头，协同社区共同推进完成。`
+        ]
       }
     },
     components: {
@@ -801,13 +875,15 @@ const messages = {
         mappingGuide: `映射指南`,
         metaMask: `小狐狸钱包使用指南`,
         imtoken: `移动端钱包使用指南`,
-        nodeMigration: `节点迁移指南`
+        nodeMigration: `节点迁移指南`,
+        voting: `INT 4.0 节点投票演示`
       },
       guidelinesLinks: {
         mappingGuide: `https://intchain.io/guidelines/INT-mapping-guide-4.0-CN.pdf`,
         metaMask: `https://intchain.io/guidelines/INT-version-MetaMask-user-guide-CN.pdf`,
         imtoken: `https://intchain.io/guidelines/INT-version-imtoken-wallet-usage-guide-CN.pdf`,
-        nodeMigration: `https://intchain.io/guidelines/Guide-to-Node-Migration-from-INT-3.0-to-INT-4.0-CN.pdf`
+        nodeMigration: `https://intchain.io/guidelines/Guide-to-Node-Migration-from-INT-3.0-to-INT-4.0-CN.pdf`,
+        voting: `https://v.qq.com/x/page/c3261ezzuvt.html`
       }
     }
   }

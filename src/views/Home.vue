@@ -152,6 +152,11 @@
               {{ $t("pages.home.tendermintTitle") }}
             </h2>
             <p>{{ $t("pages.home.tendermintSubTitle") }}</p>
+            <p>
+              <router-link class="button-link grant__header-button-link" to="/consensus">{{
+                $t("pages.home.toConsensusBtn")
+                }}</router-link>
+            </p>
           </div>
           <div class="dual-sections__image dual-sections__image--tendermint">
             <img src="../assets/images/tendermint-logo-black.png" alt="" />

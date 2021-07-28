@@ -49,6 +49,13 @@
               $t("pageLink.explorer")
             }}</router-link>
           </div>
+
+          <div class="nav__item" @click="onClickNav()">
+            <router-link to="/consensus">{{
+              $t("pageLink.consensus")
+            }}</router-link>
+          </div>
+
           <!--<div class="nav__item" @click="onClickNav()">
             <a href="https://roadpro.io" target="_blank">{{
               $t("pageLink.road")
@@ -401,6 +408,14 @@
                     >{{ $t("footer.guidelinesLabel.nodeMigration") }}</a
                   >
                 </li>
+                <li class="footer__menu_item">
+                  <a
+                    :href="$t('footer.guidelinesLinks.voting')"
+                    target="_blank"
+                    rel="noopener"
+                    >{{ $t("footer.guidelinesLabel.voting") }}</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -554,7 +569,8 @@ export default {
       @include font-size(1.4);
       color: $contentLight;
       text-decoration: none;
-      margin: 0 16px;
+      /*margin: 0 16px;*/
+      margin: 0 12px;
 
       &:hover {
         text-decoration: none;
