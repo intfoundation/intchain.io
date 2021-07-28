@@ -26,6 +26,11 @@
             }}</router-link>
           </div>
           <div class="nav__item" @click="onClickNav()">
+            <router-link to="/consensus">{{
+              $t("pageLink.consensus")
+              }}</router-link>
+          </div>
+          <div class="nav__item" @click="onClickNav()">
             <router-link to="/bsn">{{ $t("pageLink.bsn") }}</router-link>
           </div>
           <div class="nav__item" @click="onClickNav()">
@@ -47,12 +52,6 @@
           <div class="nav__item" @click="onClickNav()">
             <router-link to="/explorer">{{
               $t("pageLink.explorer")
-            }}</router-link>
-          </div>
-
-          <div class="nav__item" @click="onClickNav()">
-            <router-link to="/consensus">{{
-              $t("pageLink.consensus")
             }}</router-link>
           </div>
 
