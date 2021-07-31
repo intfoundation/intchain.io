@@ -1,10 +1,10 @@
 <template>
   <div class="view-container">
     <div class="hero">
-        <div class="launch_title content-container">
-          <span>{{ $t("pages.home.launchTitle") }}</span>
-        </div>
-        <CountDown />
+      <!--  <div class="launch_title content-container">-->
+      <!--    <span>{{ $t("pages.home.launchTitle") }}</span>-->
+      <!--  </div>-->
+      <!--  <CountDown />-->
       <div class="hero__content content-container">
         <div class="hero__header">
           <h1 class="hero__title">{{ $t("pages.home.welcomeMsg") }}</h1>
@@ -152,11 +152,6 @@
               {{ $t("pages.home.tendermintTitle") }}
             </h2>
             <p>{{ $t("pages.home.tendermintSubTitle") }}</p>
-            <p>
-              <router-link class="button-link grant__header-button-link" to="/consensus">{{
-                $t("pages.home.toConsensusBtn")
-                }}</router-link>
-            </p>
           </div>
           <div class="dual-sections__image dual-sections__image--tendermint">
             <img src="../assets/images/tendermint-logo-black.png" alt="" />
@@ -228,7 +223,7 @@ import Partners from "@/components/Partners.vue";
 import Featured from "@/components/Featured.vue";
 import Exchanges from "@/components/Exchanges.vue";
 // import Explorers from "@/components/Explorers.vue";
-import CountDown from "@/components/CountDown.vue";
+// import CountDown from "@/components/CountDown.vue";
 
 export default {
   name: "Home",
@@ -236,8 +231,8 @@ export default {
     ApplicationsGrid,
     Partners,
     Featured,
-    Exchanges,
-    CountDown
+    Exchanges
+    // CountDown
   }
 };
 </script>
