@@ -18,8 +18,8 @@ export default {
   name: "CountDown",
   mounted() {
     $("#countdown").ClassyCountdown({
-      end: "1629129600",
-      now: ($.now() / 1000).toFixed(0),
+      end: "1629281880",
+      now: Math.floor(($.now() / 1000)),
       labels: true,
       style: {
         element: "",
