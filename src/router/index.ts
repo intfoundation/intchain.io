@@ -81,8 +81,7 @@ const routes: Array<RouteConfig> = [
     path: "/consensus",
     name: "Consensus",
     component: Consensus
-  },
-
+  }
 ];
 
 const router = new VueRouter({

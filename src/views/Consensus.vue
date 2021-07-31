@@ -104,6 +104,7 @@
 </template>
 
 <script lang="ts">
+/*eslint-diable*/
 export default {
   name: "consensus",
   data() {
@@ -142,7 +143,7 @@ export default {
         this.isFixed = false;
       }
       if (this.navBoxState) {
-        let refArray = [
+        const refArray = [
           { ref: "content1", active: "menu1" },
           { ref: "content2", active: "menu2" },
           { ref: "content3", active: "menu3" },
@@ -171,8 +172,8 @@ export default {
       }, 500);
     },
     gdjz(div, offset, callback) {
-      let dom = this.$refs[div]; // 等同于document.querySelector('.earth') true
-      let box = this.$refs.con1ref.offsetTop;
+      const dom = this.$refs[div]; // 等同于document.querySelector('.earth') true
+      const box = this.$refs.con1ref.offsetTop;
       if (dom) {
         let b, c, d;
         d = dom.offsetTop; // 元素距离相对父级的高度，这里父级指的是body
