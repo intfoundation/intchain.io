@@ -12,6 +12,7 @@ import Join from "../views/Join.vue";
 import Contact from "../views/Contact.vue";
 import RiskStatement from "../views/RiskStatement.vue";
 import Disclaimer from "../views/Disclaimer.vue";
+import Consensus from "../views/Consensus.vue";
 
 Vue.use(VueRouter);
 
@@ -75,7 +76,13 @@ const routes: Array<RouteConfig> = [
     path: "/riskstatement",
     name: "Risk statement",
     component: RiskStatement
-  }
+  },
+  {
+    path: "/consensus",
+    name: "Consensus",
+    component: Consensus
+  },
+
 ];
 
 const router = new VueRouter({
