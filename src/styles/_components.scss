@@ -1956,3 +1956,14 @@
   }
 }
 
+.launch_bottom {
+
+  a {
+    @include mq-med{
+      //width: 50%;
+      display: block;
+      text-align: center;
+    }
+  }
+}
+

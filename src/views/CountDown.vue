@@ -1,6 +1,15 @@
 <template>
-  <div class="count-down content-container">
-    <div id="countdown" class="ClassyCountdownDemo"></div>
+  <div class="count-down">
+    <div class="count-down-container content-container">
+      <div class="launch_title content-container">
+        <span>{{ $t("pages.home.launchTitle") }}</span>
+      </div>
+      <div id="countdown" class="ClassyCountdownDemo"></div>
+      <div class="launch_bottom">
+        <a href="https://titansexplorer.intchain.io">https://titansexplorer.intchain.io</a>
+        <a href="https://titanswallet.intchain.io">https://titanswallet.intchain.io</a>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -19,7 +28,7 @@ export default {
   mounted() {
     $("#countdown").ClassyCountdown({
       end: "1629281880",
-      now: Math.floor(($.now() / 1000)),
+      now: Math.floor($.now() / 1000),
       labels: true,
       style: {
         element: "",
@@ -70,8 +79,44 @@ export default {
 </script>
 
 <style>
-.ClassyCountdownDemo {
+.count-down {
+  width: 100%;
+  min-height: 850px;
+  background: #171921;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  color: #ffffff;
+}
+
+.launch_title {
   margin: 0 auto;
+  text-align: center;
+  font-size: 22px;
+}
+
+.launch_bottom {
+  /*display: flex;*/
+  /*justify-content: center;*/
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+}
+.launch_bottom a {
+  margin: 0 50px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.launch_bottom a:hover {
+  color: #e73737;
+}
+
+.count-down-container {
+  margin: 0 auto;
+}
+
+.ClassyCountdownDemo {
+  margin: 50px auto;
   max-width: 800px;
   width: calc(100%);
   padding: 30px;

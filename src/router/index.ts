@@ -13,6 +13,7 @@ import Contact from "../views/Contact.vue";
 import RiskStatement from "../views/RiskStatement.vue";
 import Disclaimer from "../views/Disclaimer.vue";
 import Consensus from "../views/Consensus.vue";
+import CountDown from "../views/CountDown.vue";
 
 Vue.use(VueRouter);
 
@@ -81,6 +82,11 @@ const routes: Array<RouteConfig> = [
     path: "/consensus",
     name: "Consensus",
     component: Consensus
+  },
+  {
+    path: "/countdown",
+    name: "CountDown",
+    component: CountDown
   }
 ];
 
