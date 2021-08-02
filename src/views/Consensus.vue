@@ -115,15 +115,10 @@ export default {
     };
   },
   mounted() {
-    let timeId;
     window.addEventListener(
       "scroll",
       () => {
-        // 页面滚动停止100毫秒后才会执行下面的函数。
-        clearTimeout(timeId);
-        timeId = setTimeout(() => {
-          this.handleScroll();
-        }, 100);
+        this.handleScroll();
       },
       true
     );
