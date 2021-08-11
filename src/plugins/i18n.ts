@@ -332,7 +332,7 @@ const messages = {
         pageTitle: `What is IPBFT?`,
         pageSubTitle: `IPBFT is the consensus algorithm for INT4.0. If you compare a blockchain to a car, the consensus mechanism is the engine that powers the car.\nIPBFT is a faster, more scalable and more secure algorithm`,
         t1: `Improving IPBFT is based on PBFT (Practical Byzantine Algorithm):`,
-        li1: `Linear communication: PDBFT2.0 achieves linear worst-case communication volume, in contract to PBFT’s O(n4)`,
+        li1: `Linear communication: IPBFT achieves linear worst-case communication volume, in contract to PBFT’s O(n4)`,
         li2: `Random leader selection: the leader for each round in IPBFT is selected by a verifiable random function (VRF), which protects the leader from predictable attacks`,
         q1T: `What is consensus?`,
         q1A: [
