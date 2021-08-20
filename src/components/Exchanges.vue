@@ -21,13 +21,13 @@
         />
       </a>
     </div>
-    <div class="exchange">
+    <!--<div class="exchange">
       <img
         src="../assets/images/exchanges/bestswap-logo.png"
         alt=""
         width="100"
       />
-    </div>
+    </div>-->
     <!--<div class="exchange">
       <img
         src="../assets/images/exchanges/allcoin-logo.png"
