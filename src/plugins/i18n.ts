@@ -375,7 +375,7 @@ const messages = {
         requestLink: `https://forms.gle/sp91t7QtxHJv4A9F9`,
         guidance: {
           title: `Recruitment Guidance`,
-          li1: `INT 4.0 validator recruitment plan will be launched on September 2, 2021, which will be open for long-term;`,
+          li1: `INT 4.0 validator recruitment plan launched on September 2, 2021, which will be open for long-term;`,
           li2: `Organizations and individuals who meet the requirements can submit their applications immediately.`,
           li3: `All submitted node information will be reviewed by INT one by one to prevent malicious nodes from being created.`
         },
