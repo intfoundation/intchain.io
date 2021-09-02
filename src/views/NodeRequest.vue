@@ -84,7 +84,14 @@
             <li>{{ $t("pages.noderequest.reward.li2") }}</li>
             <li>{{ $t("pages.noderequest.reward.li3") }}</li>
             <li>{{ $t("pages.noderequest.reward.li4") }}</li>
-            <li>{{ $t("pages.noderequest.reward.li5") }}</li>
+            <li>
+              {{ $t("pages.noderequest.reward.li5") }}
+              <a
+                href="https://titansdocs.intchain.io/concepts/1-general-concepts.html#staking-rewards"
+                target="_blank"
+                >https://titansdocs.intchain.io/concepts/1-general-concepts.html#staking-rewards</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -135,7 +142,7 @@
         <div class="header-section__title">
           {{ $t("pages.noderequest.faq.title") }}
         </div>
-        <div class="noderequest__row">
+        <div class="noderequest__row-faq">
           <ul v-for="item in $t('pages.noderequest.faq.faqs')" :key="item.q">
             <li>{{ item.q }}</li>
             <li>{{ item.a }}</li>

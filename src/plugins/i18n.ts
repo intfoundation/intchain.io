@@ -375,9 +375,9 @@ const messages = {
         requestLink: `https://forms.gle/sp91t7QtxHJv4A9F9`,
         guidance: {
           title: `Recruitment Guidance`,
-          li1: `INT 4.0 validator recruitment plan will be launched on September 15, 2021, which will be open for long-term;`,
+          li1: `INT 4.0 validator recruitment plan will be launched on September 2, 2021, which will be open for long-term;`,
           li2: `Organizations and individuals who meet the requirements can submit their applications immediately.`,
-          li3: `All submitted node information will be reviewed by INT one by one to prevent malicious nodes from being created`
+          li3: `All submitted node information will be reviewed by INT one by one to prevent malicious nodes from being created.`
         },
         conditions: {
           title: `Validator Conditions`,
@@ -401,7 +401,7 @@ const messages = {
           li2: `Block reward = the number of blocks produced by the node * the reward for each block, the more the number of blocks, the more rewards. `,
           li3: `Annual node reward = node dynamic weight ratio * annual block reward`,
           li4: ` Node weight, that is, the percentage of votes obtained by nodes in total votes. Because the total amount of votes and the amount of votes obtained by a single node are constantly changing, here we use the dynamic weight ratio to list the calculation formula, which help users better understand it.`,
-          li5: `For more details, please check here: https://titansdocs.intchain.io/concepts/1-general-concepts.html#staking-rewards`
+          li5: `For more details, please check here:  `
         },
         process: {
           title: `Participation Process`,
@@ -898,16 +898,16 @@ const messages = {
         requestLink: `https://forms.gle/GXprfXMkWBzGnEWs8`,
         guidance: {
           title: `招募指引`,
-          li1: `INT 4.0 节点招募计划2021年09月15日启动，长期开放；`,
+          li1: `INT 4.0 节点招募计划2021年09月02日启动，长期开放；`,
           li2: `符合参与要求的组织和个人，可即刻提出节点申请；`,
-          li3: `所有提交的节点信息INT将会逐一核实筛选，防止恶意节点产生`
+          li3: `所有提交的节点信息INT将会逐一核实筛选，防止恶意节点产生。`
         },
         conditions: {
           title: `参与要求`,
-          li1: `（组织及个人）对区块链技术有基础的认知和了解（如公私钥、签名等等）；`,
-          li2: `（个人）拥有自己完全可控的，可接入公网的服务器资源；`,
-          li3: `（个人）拥有一定技术基础，能够独立进行服务器维护和管理操作；`,
-          li4: `（组织）拥有可运行节点的服务器和节点运维技术人员;`,
+          li1: `(组织及个人)对区块链技术有基础的认知和了解（如公私钥、签名等等）；`,
+          li2: `(个人)拥有自己完全可控的，可接入公网的服务器资源；`,
+          li3: `(个人)拥有一定技术基础，能够独立进行服务器维护和管理操作；`,
+          li4: `(组织)拥有可运行节点的服务器和节点运维技术人员;`,
           li5: `参与过INT 4.0 测试网挖矿大赛的节点运行者可优先考虑；`,
           li6: `节点软硬件和网络环境要求`,
           table: [
@@ -924,7 +924,7 @@ const messages = {
           li2: `出块奖励 = 节点出块数量 * 每个块奖励，出块数量越多，奖励越多。`,
           li3: `节点年收益=节点动态权重比*年出块奖励`,
           li4: `节点权重，即节点获得投票占总投票的百分比，因投票总量和单个节点所获得投票量是在不断变化中的，因此，在此处我们使用动态权重比列出计算公式，仅作帮助理解使用。`,
-          li5: `详细节点奖励说明请查看：https://titansdocs.intchain.io/concepts/1-general-concepts.html#staking-rewards`
+          li5: `详细节点奖励说明请查看： `
         },
         process: {
           title: `参与流程`,

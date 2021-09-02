@@ -2020,6 +2020,17 @@
       top: 15px;
       box-sizing: border-box;
     }
+
+    &-faq {
+      ul,li {
+        position: relative;
+        padding: 4px 0;
+        line-height: 1.6;
+      }
+      ul {
+        list-style-type: none;
+      }
+    }
   }
   &-conditions__table {
     max-width: 498px;
