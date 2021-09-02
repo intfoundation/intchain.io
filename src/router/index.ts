@@ -14,6 +14,7 @@ import RiskStatement from "../views/RiskStatement.vue";
 import Disclaimer from "../views/Disclaimer.vue";
 import Consensus from "../views/Consensus.vue";
 import CountDown from "../views/CountDown.vue";
+import NodeRequest from "../views/NodeRequest.vue";
 
 Vue.use(VueRouter);
 
@@ -87,6 +88,11 @@ const routes: Array<RouteConfig> = [
     path: "/countdown",
     name: "CountDown",
     component: CountDown
+  },
+  {
+    path: "/noderequest",
+    name: "NodeRequest",
+    component: NodeRequest
   }
 ];
 

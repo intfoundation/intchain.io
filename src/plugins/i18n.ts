@@ -123,6 +123,9 @@ const messages = {
         panelsSubTitle2: `Mainnet 4.0 - Upcoming`,
         panelsDesc2: [`25 Validator Nodes`, `Candidate Nodes`, `2000 TPS`],
         panelsLink2: `Mainnet 4.0 node setup guide`,
+        nodeRequestTitle: `INT 4.0 Validator Recruitment Plan`,
+        nodeRequestDesc: `INT is recruiting Mainnet 4.0 network validators on a long-term basis. Organizations and individuals who meet the requirements can apply and become INT 4.0 Validator to jointly participate in the maintenance and governance of the blockchain network and receive node rewards.`,
+        nodeRequestBtn: `Learn More`,
         incentivesTitle: `Node Incentives`,
         incentivesDesc: `INT Foundation will spend 20 million INT per year as node rewards. The rewards will be all paid out of the INT Foundation's dedicated wallet. Rewards are tiered and is dependent on type of node and amount staked.`,
         incentivesListItems: [
@@ -364,6 +367,88 @@ const messages = {
           `3.Every normal block will get a certain block reward. The block reward includes a fixed block reward and half of the handling fee. The other half of the handling fee will be directly destroyed. The gods node can set a reward percentage, each block reward will be divided proportionally between the block producer and the INT holders who voted for that node.`,
           `4.Every INT holder can participate or propose a system referendum to decide the main affairs and development of INT, each referendum will be led by the INT Foundation after the vote is completed, and will be promoted together with the community.`
         ]
+      },
+      noderequest: {
+        pageTitle: `INT 4.0 Validator Recruitment Plan`,
+        pageSubTitle: `As INT 4.0 is gradually improved and officially launched, INT 4.0 will start the recruitment of  validator. Any subject and individual who meets the selection requirements can participate in the node election and obtain node rewards. `,
+        requestBtn: `Apply Now`,
+        requestLink: `https://forms.gle/sp91t7QtxHJv4A9F9`,
+        guidance: {
+          title: `Recruitment Guidance`,
+          li1: `INT 4.0 validator recruitment plan will be launched on September 15, 2021, which will be open for long-term;`,
+          li2: `Organizations and individuals who meet the requirements can submit their applications immediately.`,
+          li3: `All submitted node information will be reviewed by INT one by one to prevent malicious nodes from being created`
+        },
+        conditions: {
+          title: `Validator Conditions`,
+          li1: `(Organization and individual) have basic knowledge and understanding of blockchain technology (e.g. public and private keys, signatures, etc.);`,
+          li2: `(Individual) have their own fully controllable server resources with access to the public network;`,
+          li3: `(Individual) has a certain technical foundation and can independently carry out server maintenance and management operations;`,
+          li4: `(Organization) has servers to run the nodes and node operation and maintenance technicians;`,
+          li5: `Those who participate in the INT 4.0 test network mining competition will be priority;`,
+          li6: `Node software, hardware and network environment requirements.`,
+          table: [
+            { label: `System`, value: `CentOS 7.5 64-bit` },
+            { label: `CPU`, value: `4 core` },
+            { label: `RAM`, value: `8 G` },
+            { label: `Storage`, value: `512GB SSD` },
+            { label: `Bandwidth`, value: `20 Mbps` }
+          ]
+        },
+        reward: {
+          title: `Node Reward`,
+          li1: `The profits of node are mainly from block production reward and transaction fees and the block production reward is limited to 20 million BTM.`,
+          li2: `Block reward = the number of blocks produced by the node * the reward for each block, the more the number of blocks, the more rewards. `,
+          li3: `Annual node reward = node dynamic weight ratio * annual block reward`,
+          li4: ` Node weight, that is, the percentage of votes obtained by nodes in total votes. Because the total amount of votes and the amount of votes obtained by a single node are constantly changing, here we use the dynamic weight ratio to list the calculation formula, which help users better understand it.`,
+          li5: `For more details, please check here: https://titansdocs.intchain.io/concepts/1-general-concepts.html#staking-rewards`
+        },
+        process: {
+          title: `Participation Process`,
+          li1: `1. Fill in the application form`,
+          li2: `2. Official review and feedback (within 3 working days)`,
+          li3: `3. 1 million INT 4.0 tokens for the register node`,
+          li4: `4. Register to run the node according to the document: https://titansdocs.intchain.io/`,
+          li5: `5. Announce new node information and get voting`
+        },
+        resources: {
+          title: `Resources`,
+          links: [
+            {
+              label: `Blockchain browser:`,
+              link: `https://titansexplorer.intchain.io/`
+            },
+            {
+              label: `Node deployment documentation:`,
+              link: `https://titansdocs.intchain.io/`
+            },
+            {
+              label: `Voting tutorial:`,
+              link: `https://www.youtube.com/watch?v=yt9aLx7KHgI`
+            }
+          ]
+        },
+        faq: {
+          title: `FAQ`,
+          faqs: [
+            {
+              q: `1.When will the validator be rewarded?`,
+              a: `The validator will receive node rewards in real-time after the block is produced;`
+            },
+            {
+              q: `2.How often is the number of votes counted for a node?`,
+              a: `Voting is real-time and candidate nodes can see real-time changes in the number of votes. The replacement cycle of the validators is about 2 hours, and the new votes of the validation node will take effect in the next cycle.`
+            },
+            {
+              q: `3.What is the voting reward for voters?`,
+              a: `The percentage of the reward given to voters is set by the node itself (i.e. the voting reward may not be the same for each node) and ranges from 0% to 100%.`
+            },
+            {
+              q: `4.Can a node withdraw its own votes after it has received enough votes from other people?`,
+              a: `No. For security reasons, nodes are required to stake their votes as collateral to prevent malpractice from occurring, so they cannot withdraw their votes. If in extreme cases you need to withdraw your vote, you can withdraw all your votes by cancelling the node.`
+            }
+          ]
+        }
       }
     },
     components: {
@@ -560,6 +645,9 @@ const messages = {
         panelsSubTitle2: `主网 4.0 - 即将上线`,
         panelsDesc2: [`25个验证节点`, `候选节点`, `2000 TPS`],
         panelsLink2: `主网 4.0 节点设置指南`,
+        nodeRequestTitle: `INT 4.0 验证节点招募计划`,
+        nodeRequestDesc: `INT长期招募4.0网络验证节点， 符合参与要求的组织和个人，可提出节点申请，成为INT 4.0 验证节点，参与区块链网络维护与共治，获得节点奖励。`,
+        nodeRequestBtn: `了解更多`,
         incentivesTitle: `节点计划激励机制`,
         incentivesDesc: `INT基金会每年预计支出2000万个INT作为节点计划奖励，奖励均从INT基金会的专属钱包支出。奖励数量取决于节点类型和质押数量。`,
         incentivesListItems: [
@@ -802,6 +890,88 @@ const messages = {
           `3.每出来一个正常的区块都会获得一定的区块奖励，区块奖励包含固定区块奖励和手续费的一半两部分，手续费的另一半将被直接销毁，众神节点可以设定一个的佣金比例，每个区块奖励将按比例分给出块节点和投票给该节点的INT持币者。`,
           `4.每一个INT的持币用户都可以参与或者提议系统公投，来决议INT的主要事务和发展，每一个公投在表决结束后，将由INT基金会牵头，协同社区共同推进完成。`
         ]
+      },
+      noderequest: {
+        pageTitle: `INT 4.0节点招募`,
+        pageSubTitle: `随着INT 4.0的逐渐完善，正式网上线，INT 4.0将开启共识节点的招募，任何符合入选条件的主体和个人都可以参与节点竞选，并获得节点的收益。`,
+        requestBtn: `立即申请`,
+        requestLink: `https://forms.gle/GXprfXMkWBzGnEWs8`,
+        guidance: {
+          title: `招募指引`,
+          li1: `INT 4.0 节点招募计划2021年09月15日启动，长期开放；`,
+          li2: `符合参与要求的组织和个人，可即刻提出节点申请；`,
+          li3: `所有提交的节点信息INT将会逐一核实筛选，防止恶意节点产生`
+        },
+        conditions: {
+          title: `参与要求`,
+          li1: `（组织及个人）对区块链技术有基础的认知和了解（如公私钥、签名等等）；`,
+          li2: `（个人）拥有自己完全可控的，可接入公网的服务器资源；`,
+          li3: `（个人）拥有一定技术基础，能够独立进行服务器维护和管理操作；`,
+          li4: `（组织）拥有可运行节点的服务器和节点运维技术人员;`,
+          li5: `参与过INT 4.0 测试网挖矿大赛的节点运行者可优先考虑；`,
+          li6: `节点软硬件和网络环境要求`,
+          table: [
+            { label: `系统`, value: `CentOS 7.5 64-bit` },
+            { label: `CPU`, value: `4 core` },
+            { label: `内存`, value: `8 G` },
+            { label: `本地存储`, value: `512GB SSD` },
+            { label: `带宽`, value: `20 Mbps` }
+          ]
+        },
+        reward: {
+          title: `节点奖励`,
+          li1: `节点的收益主要来自出块奖励和Tx手续费，每年出块奖励上限约为2000万个INT。`,
+          li2: `出块奖励 = 节点出块数量 * 每个块奖励，出块数量越多，奖励越多。`,
+          li3: `节点年收益=节点动态权重比*年出块奖励`,
+          li4: `节点权重，即节点获得投票占总投票的百分比，因投票总量和单个节点所获得投票量是在不断变化中的，因此，在此处我们使用动态权重比列出计算公式，仅作帮助理解使用。`,
+          li5: `详细节点奖励说明请查看：https://titansdocs.intchain.io/concepts/1-general-concepts.html#staking-rewards`
+        },
+        process: {
+          title: `参与流程`,
+          li1: `1.填写节点申请表`,
+          li2: `2.等待INT人员的信息审核及回复（3个工作日内）`,
+          li3: `3.准备好注册节点的100万INT 4.0 代币`,
+          li4: `4.根据文档注册运行节点：https://titansdocs.intchain.io/`,
+          li5: `5.公告新增节点信息，获取投票`
+        },
+        resources: {
+          title: `相关资源`,
+          links: [
+            {
+              label: `区块链浏览器:`,
+              link: `https://titansexplorer.intchain.io/`
+            },
+            {
+              label: `节点部署文档:`,
+              link: `https://titansdocs.intchain.io/`
+            },
+            {
+              label: `投票教程:`,
+              link: `https://www.youtube.com/watch?v=yt9aLx7KHgI`
+            }
+          ]
+        },
+        faq: {
+          title: `FAQ`,
+          faqs: [
+            {
+              q: `1.验证节点多长时间能拿到奖励？`,
+              a: `在出块后，可以实时领取奖励`
+            },
+            {
+              q: `2.多长时间统计一次节点的投票数量？`,
+              a: `投票是实时，候选节点可以实时看到投票数量的新增。验证节点的替换周期约为2个小时，验证节点的新增投票会在下一个周期生效。`
+            },
+            {
+              q: `3.投票人的投票奖励是多少？`,
+              a: `给投票人的投票奖励的百分比由节点自行设定（即每个节点的投票奖励可能不一致），范围在0%—100%。`
+            },
+            {
+              q: `4.当一个节点获得的足够的其他人的投票后，能否撤出自己给自己的投得的票数？`,
+              a: `不能，基于安全性考虑，节点需要将自己的投票作为保证金抵押，防止作恶行为的发生，所以节点无法撤出对自己的投票。如果极端情况下需要撤回投票，则可以通过注销节点撤回自己的所有投票。`
+            }
+          ]
+        }
       }
     },
     components: {

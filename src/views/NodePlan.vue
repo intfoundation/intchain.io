@@ -92,10 +92,33 @@
     </div>
     <!-- .section end -->
 
+    <!--  node request  -->
     <div class="section">
       <div
         class="section__content section__content--thin-top content-container"
       >
+        <div class="dual-sections dual-sections--reverse">
+          <div class="dual-sections__image dual-sections__image--md">
+            <img src="../assets/images/node-request.png" alt="" />
+          </div>
+          <div class="dual-sections__info">
+            <h2 class="dual-sections__title">
+              {{ $t("pages.nodeplan.nodeRequestTitle") }}
+            </h2>
+            <p>{{ $t("pages.nodeplan.nodeRequestDesc") }}</p>
+            <div class="section__more-link">
+              <router-link to="/noderequest" class="button-link">{{
+                $t("pages.nodeplan.nodeRequestBtn")
+              }}</router-link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- .section end -->
+
+    <div class="section">
+      <div class="section__content content-container">
         <div class="dual-sections dual-sections--reverse">
           <div class="dual-sections__info">
             <h2 class="dual-sections__title">
