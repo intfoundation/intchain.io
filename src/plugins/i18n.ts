@@ -397,7 +397,7 @@ const messages = {
         },
         reward: {
           title: `Node Reward`,
-          li1: `The profits of node are mainly from block production reward and transaction fees and the block production reward is limited to 20 million BTM.`,
+          li1: `The profits of node are mainly from block production reward and transaction fees and the block production reward is limited to 20 million INT.`,
           li2: `Block reward = the number of blocks produced by the node * the reward for each block, the more the number of blocks, the more rewards. `,
           li3: `Annual node reward = node dynamic weight ratio * annual block reward`,
           li4: ` Node weight, that is, the percentage of votes obtained by nodes in total votes. Because the total amount of votes and the amount of votes obtained by a single node are constantly changing, here we use the dynamic weight ratio to list the calculation formula, which help users better understand it.`,
