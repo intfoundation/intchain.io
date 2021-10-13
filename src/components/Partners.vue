@@ -48,5 +48,10 @@
     <div class="partner">
       <img src="../assets/images/partners/chainlink.png" alt="" height="65" />
     </div>
+    <a href="https://hashtechnology.org/" target="_blank">
+      <div class="partner">
+        <img src="../assets/images/partners/logo-hash.png" alt="" height="65" />
+      </div>
+    </a>
   </div>
 </template>
