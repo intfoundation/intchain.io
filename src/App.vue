@@ -248,6 +248,7 @@
         </div>
         <div class="footer__col footer__col--right">
           <div class="footer__menu-wrapper">
+            <!-- about -->
             <div class="footer__menu_block">
               <div class="footer__menu_caption">{{ $t("footer.about") }}</div>
               <ul class="footer__menu_list">
@@ -272,8 +273,17 @@
                     $t("pageLink.team")
                   }}</router-link>
                 </li>
+                <li class="footer__menu_item">
+                  <a
+                    href="https://intchain.io/faq"
+                    target="_blank"
+                    rel="noopener"
+                    >faq</a
+                  >
+                </li>
               </ul>
             </div>
+            <!-- resources -->
             <div class="footer__menu_block">
               <div class="footer__menu_caption">
                 {{ $t("footer.resources") }}
@@ -345,6 +355,7 @@
                 </li>
               </ul>
             </div>
+            <!-- get involved -->
             <div class="footer__menu_block">
               <div class="footer__menu_caption">
                 {{ $t("footer.getInvolved") }}
@@ -370,6 +381,7 @@
                 </li>
               </ul>
             </div>
+            <!-- 4.0 -->
             <div class="footer__menu_block">
               <div class="footer__menu_caption">
                 {{ $t("footer.guidelinesV4") }}
@@ -420,6 +432,7 @@
           </div>
         </div>
       </div>
+      <!-- 底部日期 -->
       <div class="footer__bottom">
         <div class="footer__bottom-info">
           <div class="footer__copyright">
