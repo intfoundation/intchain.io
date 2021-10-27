@@ -275,10 +275,10 @@
                 </li>
                 <li class="footer__menu_item">
                   <a
-                    href="https://intchain.io/faq"
+                    href="https://faq.intchain.io/intchain-faq/faq.html"
                     target="_blank"
                     rel="noopener"
-                    >faq</a
+                    >FAQ</a
                   >
                 </li>
               </ul>
