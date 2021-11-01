@@ -379,6 +379,14 @@
                     >{{ $t("footer.gitHub") }}</a
                   >
                 </li>
+                <li class="footer__menu_item">
+                  <a
+                    href="https://titanswallet.intchain.io/#/bridge"
+                    target="_blank"
+                    rel="noopener"
+                    >Cross-Chain Bridge</a
+                  >
+                </li>
               </ul>
             </div>
             <!-- 4.0 -->
