@@ -384,7 +384,7 @@
                     href="https://titanswallet.intchain.io/#/bridge"
                     target="_blank"
                     rel="noopener"
-                    >Cross-Chain Bridge</a
+                    >跨链桥</a
                   >
                 </li>
               </ul>
