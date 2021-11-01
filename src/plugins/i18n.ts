@@ -21,7 +21,8 @@ const messages = {
       riskstatement: `Risk Statement`,
       wallet: `Wallet`,
       consensus: `Consensus`,
-      grant: `Grant`
+      grant: `Grant`,
+
     },
     pages: {
       home: {
@@ -513,6 +514,7 @@ const messages = {
       whitepaperLink: `https://intchain.io/whitepaper/INT-whitepaper-release-EN.pdf`,
       bsnLink: `BSN global website`,
       gitHub: `GitHub`,
+      crossBridge:'Cross-Chain Bridge',
       copyright: `All rights reserved`,
       guidelinesV4: `4.0 Related Guidelines`,
       guidelinesLabel: {
@@ -1037,6 +1039,7 @@ const messages = {
       whitepaperLink: `https://intchain.io/whitepaper/INT-whitepaper-release-CN.pdf`,
       bsnLink: `BSN 官网`,
       gitHub: `GitHub`,
+      crossBridge:'跨链桥',
       copyright: `All rights reserved`,
       guidelinesV4: `4.0 相关指南`,
       guidelinesLabel: {

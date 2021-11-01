@@ -384,7 +384,7 @@
                     href="https://titanswallet.intchain.io/#/bridge"
                     target="_blank"
                     rel="noopener"
-                    >跨链桥</a
+                    >{{ $t("footer.crossBridge") }}</a
                   >
                 </li>
               </ul>
