@@ -1037,6 +1037,7 @@ const messages = {
       webWallet: `Web钱包`,
       whitepaper: `白皮书`,
       whitepaperLink: `https://intchain.io/whitepaper/INT-whitepaper-release-CN.pdf`,
+      
       bsnLink: `BSN 官网`,
       gitHub: `GitHub`,
       crossBridge:'跨链桥',
