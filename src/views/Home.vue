@@ -10,7 +10,11 @@
           <h1 class="hero__title">{{ $t("pages.home.welcomeMsg") }}</h1>
           <div class="hero__subTitle">{{ $t("pages.home.welcomeNote") }}</div>
         </div>
-        <div class="hero__graphic"><span></span></div>
+          <div class="hero__graphic"> 
+            <video controls muted autoplay>
+              <source :src="vioUrl" type="video/mp4">
+            </video> 
+          </div>
       </div>
     </div>
     <!-- .hero end -->
@@ -224,9 +228,15 @@ import Featured from "@/components/Featured.vue";
 import Exchanges from "@/components/Exchanges.vue";
 // import Explorers from "@/components/Explorers.vue";
 // import CountDown from "@/components/CountDown.vue";
+import vio from "../../src/assets/images/videoplayback.mp4"
 
 export default {
   name: "Home",
+  data(){
+    return{
+      vioUrl:vio
+    }
+  },
   components: {
     ApplicationsGrid,
     Partners,
