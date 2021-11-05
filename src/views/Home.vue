@@ -10,7 +10,7 @@
           <h1 class="hero__title">{{ $t("pages.home.welcomeMsg") }}</h1>
           <div class="hero__subTitle">{{ $t("pages.home.welcomeNote") }}</div>
         </div>
-          <div class="hero__graphic"> 
+          <div class="hero__graphic" style="padding: 16px"> 
             <video controls muted autoplay>
               <source :src="vioUrl" type="video/mp4">
             </video> 
