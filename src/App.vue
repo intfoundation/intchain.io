@@ -254,7 +254,7 @@
               <ul class="footer__menu_list">
                 <li class="footer__menu_item">
                   <a
-                    href="https://www.youtube.com/watch?v=TaFwHqqRYgc"
+                    href="https://www.youtube.com/watch?v=QDF0KqZFEq8"
                     target="_blank"
                     rel="noopener"
                     >{{ $t("footer.intVideo") }}</a
