@@ -15,6 +15,7 @@ import Disclaimer from "../views/Disclaimer.vue";
 import Consensus from "../views/Consensus.vue";
 import CountDown from "../views/CountDown.vue";
 import NodeRequest from "../views/NodeRequest.vue";
+import Grant from "../views/Grant.vue";
 
 Vue.use(VueRouter);
 
@@ -93,6 +94,11 @@ const routes: Array<RouteConfig> = [
     path: "/noderequest",
     name: "NodeRequest",
     component: NodeRequest
+  },
+  {
+    path: "/grant",
+    name: "Grant",
+    component: Grant
   }
 ];
 

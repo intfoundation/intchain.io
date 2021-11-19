@@ -21,8 +21,7 @@ const messages = {
       riskstatement: `Risk Statement`,
       wallet: `Wallet`,
       consensus: `Consensus`,
-      grant: `Grant`,
-
+      grant: `Grant`
     },
     pages: {
       home: {
@@ -369,6 +368,72 @@ const messages = {
           `4.Every INT holder can participate or propose a system referendum to decide the main affairs and development of INT, each referendum will be led by the INT Foundation after the vote is completed, and will be promoted together with the community.`
         ]
       },
+      grant: {
+        pageTitle: `INT powers every potential value application`,
+        pageSubTitle: `#INT Grant - Born for value applications, making ll DAPPs truly useful`,
+        headerLabel: `We value every good idea and application, if you have the same opinion with us, you will have the opportunity to get a development fund of $10K -100K(loT applications are not subject to the upper limit of this fund)`,
+        grantFormLink: `https://forms.gle/wNwtR4dyCLuqaBjP8`,
+        grantFormLinkLabel: `APPLY NOW`,
+        strengths: {
+          title: `WHAT YOU GET`,
+          items: [
+            {
+              id: `strengthsItem1`,
+              imgUrl: `../assets/images/grant/2.png`,
+              labelStr: `Fund Support`,
+              spanStr: `Multiple funding available to help projects launched`
+            },
+            {
+              id: `strengthsItem2`,
+              imgUrl: `../assets/images/grant/3.png`,
+              labelStr: `Financing Opportunity`,
+              spanStr: `More opportunities to get the leading capital in the industry`
+            },
+            {
+              id: `strengthsItem3`,
+              imgUrl: `../assets/images/grant/4.png`,
+              labelStr: `Resources Sharing`,
+              spanStr: `Enjoy multi-dimensional brand exposure with INT `
+            },
+            {
+              id: `strengthsItem4`,
+              imgUrl: `../assets/images/grant/5.png`,
+              labelStr: `Traffic Support`,
+              spanStr: `Access to INT traffic support`
+            },
+            {
+              id: `strengthsItem5`,
+              imgUrl: `../assets/images/grant/6.png`,
+              labelStr: `Technical Support`,
+              spanStr: `Access to INT technical support`
+            },
+            {
+              id: `strengthsItem6`,
+              imgUrl: `../assets/images/grant/7.png`,
+              labelStr: `Eco-Bonus`,
+              spanStr: `Sharing of dividends for projects within the ecology`
+            }
+          ]
+        },
+        expectations: {
+          title: `WHAT WE EXPECT`,
+          items: [
+            { id: `expectationsItem1`, label: `Internet of Things` },
+            { id: `expectationsItem2`, label: `DEX` },
+            { id: `expectationsItem3`, label: `Lending` },
+            { id: `expectationsItem4`, label: `Derivatives` },
+            { id: `expectationsItem5`, label: `Aggregate Revenue` },
+            { id: `expectationsItem6`, label: `Asset cross-chain ` },
+            { id: `expectationsItem7`, label: `Oracle` }
+          ],
+          desc: `For developer's projects, we do not limit the scope or type of projects. Because diversity is vital to the ecology. `
+        },
+        global: {
+          title: `Join us to build a blockchain developer's utopia together`,
+          int: ``,
+          imgUrl: `/images/grant/9-en.png`
+        }
+      },
       noderequest: {
         pageTitle: `INT 4.0 Validator Recruitment Plan`,
         pageSubTitle: `As INT 4.0 is gradually improved and officially launched, INT 4.0 will start the recruitment of  validator. Any subject and individual who meets the selection requirements can participate in the node election and obtain node rewards. `,
@@ -514,7 +579,7 @@ const messages = {
       whitepaperLink: `https://intchain.io/whitepaper/INT-whitepaper-release-EN.pdf`,
       bsnLink: `BSN global website`,
       gitHub: `GitHub`,
-      crossBridge:'Cross-Chain Bridge',
+      crossBridge: `Cross-Chain Bridge`,
       copyright: `All rights reserved`,
       guidelinesV4: `4.0 Related Guidelines`,
       guidelinesLabel: {
@@ -893,6 +958,72 @@ const messages = {
           `4.每一个INT的持币用户都可以参与或者提议系统公投，来决议INT的主要事务和发展，每一个公投在表决结束后，将由INT基金会牵头，协同社区共同推进完成。`
         ]
       },
+      grant: {
+        pageTitle: `INT 助力每一个每一个可能的价值应用`,
+        pageSubTitle: `#INT Grant ———— 为价值应用而生，让所有DAPP都真实有用!`,
+        headerLabel: `我们将重视每一个好的创意，每一个好的应用，如果您与我们志同道合，那么您将有机会获得$10K - 100K 的开发基金(物联网应用不受此基金上限的限制)`,
+        grantFormLink: `https://forms.gle/ivs92Kx7uKnnYvFD7`,
+        grantFormLinkLabel: `立即申请`,
+        strengths: {
+          title: `你将获得`,
+          items: [
+            {
+              id: `strengthsItem1`,
+              imgUrl: `../assets/images/grant/2.png`,
+              labelStr: `基金支持`,
+              spanStr: `提供多重基金，助力项目真实落地`
+            },
+            {
+              id: `strengthsItem2`,
+              imgUrl: `../assets/images/grant/3.png`,
+              labelStr: `融资机会`,
+              spanStr: `更有机会获得行业内领先资本的青睐`
+            },
+            {
+              id: `strengthsItem3`,
+              imgUrl: `../assets/images/grant/4.png`,
+              labelStr: `资源共享`,
+              spanStr: `享受INT多维度品牌曝光`
+            },
+            {
+              id: `strengthsItem4`,
+              imgUrl: `../assets/images/grant/5.png`,
+              labelStr: `流量支持`,
+              spanStr: `获得INT生态流量支持`
+            },
+            {
+              id: `strengthsItem5`,
+              imgUrl: `../assets/images/grant/6.png`,
+              labelStr: `技术支持`,
+              spanStr: `获得INT团队技术支持`
+            },
+            {
+              id: `strengthsItem6`,
+              imgUrl: `../assets/images/grant/7.png`,
+              labelStr: `生态红利`,
+              spanStr: `生态内项目共享红利`
+            }
+          ]
+        },
+        expectations: {
+          title: `我们的期望`,
+          items: [
+            { id: `expectationsItem1`, label: `物联网` },
+            { id: `expectationsItem1`, label: `DEX` },
+            { id: `expectationsItem2`, label: `借贷` },
+            { id: `expectationsItem3`, label: `衍生品` },
+            { id: `expectationsItem4`, label: `收益聚合` },
+            { id: `expectationsItem5`, label: `资产跨链` },
+            { id: `expectationsItem6`, label: `预言机` }
+          ],
+          desc: `对于开发者的项目，我们不限定项目的范围和类型。因为我们深知的多样性对于生态来说至关重要。`
+        },
+        global: {
+          title: `加入我们，一起打造区块链开发者的乌托邦`,
+          int: `INT Chain`,
+          imgUrl: `/images/grant/9.png`
+        }
+      },
       noderequest: {
         pageTitle: `INT 4.0节点招募`,
         pageSubTitle: `随着INT 4.0的逐渐完善，正式网上线，INT 4.0将开启共识节点的招募，任何符合入选条件的主体和个人都可以参与节点竞选，并获得节点的收益。`,
@@ -1037,10 +1168,10 @@ const messages = {
       webWallet: `Web钱包`,
       whitepaper: `白皮书`,
       whitepaperLink: `https://intchain.io/whitepaper/INT-whitepaper-release-CN.pdf`,
-      
+
       bsnLink: `BSN 官网`,
       gitHub: `GitHub`,
-      crossBridge:'跨链桥',
+      crossBridge: `跨链桥`,
       copyright: `All rights reserved`,
       guidelinesV4: `4.0 相关指南`,
       guidelinesLabel: {

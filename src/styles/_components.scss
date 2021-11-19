@@ -1532,7 +1532,7 @@
     justify-content: center;
 
     .vipng{
-      display: inline-block; 
+      display: inline-block;
       vertical-align:middle;
       margin-top:-8px
     }
@@ -2094,6 +2094,195 @@
   &-resources {
     &__span {
       margin-right: 10px;
+    }
+  }
+}
+.grant {
+  &__color-white {
+    color: #fff;
+  }
+  &__header {
+    position: relative;
+    padding-bottom: 40px;
+    &-section {
+      background-color: #000;
+      &__heading {
+        z-index: 2;
+        flex: none;
+        width: 70%;
+        min-height: 400px;
+        @include mq-med {
+          width: 100%;
+          flex: 1;
+          min-height: 100px;
+        }
+      }
+      &__title {
+        font-size: 38px;
+        @include mq-med {
+          font-size: 24px;
+        }
+      }
+    }
+    &-font {
+      font-family: "微软雅黑";
+    }
+    &-title {
+      font-size: 56px;
+      @include mq-lrg {
+        font-size: 32px;
+      }
+    }
+    &-subTitle {
+      font-size: 24px;
+      @include mq-lrg {
+        font-size: 16px;
+      }
+    }
+    &-label {
+      margin-top: 40px;
+      margin-bottom: 30px;
+      word-break: break-word;
+    }
+    &-button-link {
+      font-size: 32px;
+    }
+    &-img {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+      height: 400px;
+      width: 500px;
+      object-fit: contain;
+    }
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__strengths-item {
+    width: 33.33%;
+    padding: 20px;
+    box-sizing: border-box;
+    @include mq-med {
+      width: 100%;
+      padding: 15px;
+    }
+    & img {
+      width: 100%;
+      object-fit: contain;
+    }
+    .item-label {
+      font-size: 16px;
+      margin-top: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .item-span {
+      font-size: 14px;
+      margin-top: 10px;
+      text-align: center;
+
+    }
+  }
+  &__expectations {
+    &-section {
+      background-color: #F5F5F5;
+    }
+    &-item {
+      width: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      margin-right: 20px;
+      flex: 1;
+      @include mq-med {
+        margin-bottom: 15px;
+        margin-right: 0;
+        width: 50%;
+        flex: none;
+      }
+      .item-img {
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #fff;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .item-label {
+        text-align: center;
+        word-break: break-word;
+        margin-top: 15px;
+      }
+
+      &-more {
+        width: 80px;
+        height: 100%;
+        @include mq-med {
+          flex: 1;
+          margin-bottom: 15px;
+        }
+        .item-more-box {
+          width: 80px;
+          height: 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include mq-med {
+            margin: auto;
+          }
+          .circle {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: #111111;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+    &-desc {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
+  &__global {
+    &-row {
+
+    }
+    &-title {
+      font-size: 36px;
+      text-align: center;
+      margin-top: 40px;
+      @include mq-med {
+        font-size: 18px;
+      }
+    }
+    &-img {
+      width: 100%;
+      height: 300px;
+      margin-top: 60px;
+
+      @include mq-med {
+        width: 100%;
+        height: 110px;
+        margin-top: 40px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
     }
   }
 }
