@@ -370,8 +370,8 @@ const messages = {
       },
       grant: {
         pageTitle: `INT powers every potential value application`,
-        pageSubTitle: `#INT Grant - Born for value applications, making ll DAPPs truly useful`,
-        headerLabel: `We value every good idea and application, if you have the same opinion with us, you will have the opportunity to get a development fund of $10K -100K(loT applications are not subject to the upper limit of this fund)`,
+        pageSubTitle: `#INT Grant - Born for value applications, making all DAPPs truly useful`,
+        headerLabel: `We value every good idea and application, If you share the same vision as us, you will have the opportunity to get a development fund of $10K -50K(loT applications are not subject to the upper limit of this fund)`,
         grantFormLink: `https://forms.gle/wNwtR4dyCLuqaBjP8`,
         grantFormLinkLabel: `APPLY NOW`,
         strengths: {
