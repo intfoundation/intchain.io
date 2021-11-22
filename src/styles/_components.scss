@@ -2098,6 +2098,9 @@
   }
 }
 .grant {
+  &__img {
+    object-fit: contain;
+  }
   &__color-white {
     color: #fff;
   }
@@ -2150,7 +2153,7 @@
     &-img {
       position: absolute;
       right: 0;
-      top: 0;
+      top: 40px;
       z-index: 1;
       height: 400px;
       width: 500px;
