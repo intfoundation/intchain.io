@@ -959,7 +959,7 @@ const messages = {
         ]
       },
       grant: {
-        pageTitle: `INT 助力每一个每一个可能的价值应用`,
+        pageTitle: `INT 助力每一个可能的价值应用`,
         pageSubTitle: `#INT Grant ———— 为价值应用而生，让所有DAPP都真实有用!`,
         headerLabel: `我们将重视每一个好的创意，每一个好的应用，如果您与我们志同道合，那么您将有机会获得$10K - 100K 的开发基金(物联网应用不受此基金上限的限制)`,
         grantFormLink: `https://forms.gle/ivs92Kx7uKnnYvFD7`,
