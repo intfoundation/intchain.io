@@ -21,7 +21,8 @@ const messages = {
       riskstatement: `Risk Statement`,
       wallet: `Wallet`,
       consensus: `Consensus`,
-      grant: `Grant`
+      grant: `Grant`,
+      nft: `NFT`
     },
     pages: {
       home: {
@@ -615,7 +616,8 @@ const messages = {
       riskstatement: `风险声明`,
       wallet: `钱包`,
       consensus: `共识`,
-      grant: `开发基金`
+      grant: `开发基金`,
+      nft: `NFT`
     },
     pages: {
       home: {

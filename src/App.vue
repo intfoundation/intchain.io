@@ -57,6 +57,11 @@
           <div class="nav__item" @click="onClickNav()">
             <router-link to="/grant">{{ $t("pageLink.grant") }}</router-link>
           </div>
+          <div class="nav__item" @click="onClickNav()">
+            <a href="https://intbox.org" target="_blank">{{
+              $t("pageLink.nft")
+            }}</a>
+          </div>
 
           <!--<div class="nav__item" @click="onClickNav()">
             <a href="https://roadpro.io" target="_blank">{{
