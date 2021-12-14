@@ -339,6 +339,14 @@
                 </li>
                 <li class="footer__menu_item">
                   <a
+                    href="https://blockscout.explorer.intchain.io"
+                    target="_blank"
+                    rel="noopener"
+                    >{{ $t("footer.mainExplorer4Blockscout") }}</a
+                  >
+                </li>
+                <li class="footer__menu_item">
+                  <a
                     href="https://titanswallet.intchain.io"
                     target="_blank"
                     rel="noopener"

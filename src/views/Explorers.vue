@@ -61,6 +61,20 @@
                 <span>Testnet</span>
               </div>
             </a>
+            <a
+              class="explorer"
+              href="https://blockscout.explorer.intchain.io"
+              target="_blank"
+            >
+              <div class="explorer__logo">
+                <img
+                  src="../assets/images/explorers/int.png"
+                  alt=""
+                  width="80"
+                />
+                <span>Blockscout <br/>Explorer</span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
