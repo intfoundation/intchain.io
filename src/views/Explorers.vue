@@ -72,7 +72,7 @@
                   alt=""
                   width="80"
                 />
-                <span>Blockscout <br/>Explorer</span>
+                <span>Blockscout<br />Explorer</span>
               </div>
             </a>
           </div>
