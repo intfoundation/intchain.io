@@ -403,6 +403,14 @@
                     >{{ $t("footer.crossBridge") }}</a
                   >
                 </li>
+                <li class="footer__menu_item">
+                  <a
+                    href="https://community.intchain.io/"
+                    target="_blank"
+                    rel="noopener"
+                    >{{ $t("footer.intForum") }}</a
+                  >
+                </li>
               </ul>
             </div>
             <!-- 4.0 -->

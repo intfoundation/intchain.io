@@ -582,6 +582,7 @@ const messages = {
       bsnLink: `BSN global website`,
       gitHub: `GitHub`,
       crossBridge: `Cross-Chain Bridge`,
+      intForum: `INT Forum`,
       copyright: `All rights reserved`,
       guidelinesV4: `4.0 Related Guidelines`,
       guidelinesLabel: {
@@ -1176,6 +1177,7 @@ const messages = {
       bsnLink: `BSN 官网`,
       gitHub: `GitHub`,
       crossBridge: `跨链桥`,
+      intForum: `INT 论坛`,
       copyright: `All rights reserved`,
       guidelinesV4: `4.0 相关指南`,
       guidelinesLabel: {
