@@ -132,7 +132,7 @@
               </li>
               <li class="">
                 <a
-                  href="https://t.me/INTChainOfficial"
+                  href="https://t.me/+jV31eMUIFsFjYjQ1"
                   target="_blank"
                   rel="noopener"
                   ><img
