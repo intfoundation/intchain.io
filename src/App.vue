@@ -132,7 +132,7 @@
               </li>
               <li class="">
                 <a
-                  href="https://t.me/+jV31eMUIFsFjYjQ1"
+                  href="https://t.me/INTchain_officialtelegram"
                   target="_blank"
                   rel="noopener"
                   ><img
