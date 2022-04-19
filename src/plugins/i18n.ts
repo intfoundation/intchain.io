@@ -593,7 +593,7 @@ const messages = {
         voting: `INT 4.0 Staking and voting demonstration`
       },
       guidelinesLinks: {
-        mappingGuide: `https://intchain.io/guidelines/INT-mapping-guide-4.0-EN.pdf`,
+        mappingGuide: `https://intchain.io/guidelines/INT-mapping-guide-4.0-EN-20220419.pdf`,
         metaMask: `https://intchain.io/guidelines/INT-version-MetaMask-user-guide-EN.pdf`,
         imtoken: `https://intchain.io/guidelines/INT-version-imtoken-wallet-usage-guide-EN.pdf`,
         nodeMigration: `https://intchain.io/guidelines/Guide-to-Node-Migration-from-INT-3.0-to-INT-4.0-EN.pdf`,
@@ -1188,7 +1188,7 @@ const messages = {
         voting: `INT 4.0 节点投票演示`
       },
       guidelinesLinks: {
-        mappingGuide: `https://intchain.io/guidelines/INT-mapping-guide-4.0-CN.pdf`,
+        mappingGuide: `https://intchain.io/guidelines/INT-mapping-guide-4.0-CN-20220419.pdf`,
         metaMask: `https://intchain.io/guidelines/INT-version-MetaMask-user-guide-CN.pdf`,
         imtoken: `https://intchain.io/guidelines/INT-version-imtoken-wallet-usage-guide-CN.pdf`,
         nodeMigration: `https://intchain.io/guidelines/Guide-to-Node-Migration-from-INT-3.0-to-INT-4.0-CN.pdf`,
