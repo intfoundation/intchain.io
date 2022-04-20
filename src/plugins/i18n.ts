@@ -578,7 +578,7 @@ const messages = {
       testWebWallet4: `4.0 Test Web Wallet`,
       mainWebWallet4: `4.0 Web Wallet`,
       whitepaper: `Whitepaper`,
-      whitepaperLink: `https://intchain.io/whitepaper/INT-whitepaper-release-EN.pdf`,
+      whitepaperLink: `https://intchain.io/whitepaper/INT-White-Paper-3.0-EN.pdf`,
       bsnLink: `BSN global website`,
       gitHub: `GitHub`,
       crossBridge: `Cross-Chain Bridge`,
@@ -1172,7 +1172,7 @@ const messages = {
       mainWebWallet4: `4.0 Web钱包`,
       webWallet: `Web钱包`,
       whitepaper: `白皮书`,
-      whitepaperLink: `https://intchain.io/whitepaper/INT-whitepaper-release-CN.pdf`,
+      whitepaperLink: `https://intchain.io/whitepaper/INT-White-Paper-3.0-CN.pdf`,
 
       bsnLink: `BSN 官网`,
       gitHub: `GitHub`,
