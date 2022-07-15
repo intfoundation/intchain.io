@@ -53,5 +53,10 @@
         <img src="../assets/images/partners/logo-hash.png" alt="" height="65" />
       </div>
     </a>
+    <a href="https://richverse.io/" target="_blank">
+      <div class="partner">
+        <img src="../assets/images/partners/richverse.png" alt="" height="40" />
+      </div>
+    </a>
   </div>
 </template>
