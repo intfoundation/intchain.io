@@ -131,6 +131,7 @@
               {{ $t("pages.team.secondaryTeam[0].desc") }}
             </div>
           </div>
+          <!--
           <div class="team-item">
             <div class="team-item-image">
               <img src="../assets/images/team/tanlei.png" alt="" />
@@ -142,6 +143,7 @@
               {{ $t("pages.team.secondaryTeam[1].desc") }}
             </div>
           </div>
+          -->
           <div class="team-item">
             <div class="team-item-image">
               <img src="../assets/images/team/wangdou.png" alt="" />
