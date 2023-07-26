@@ -1,9 +1,32 @@
+.anniversary{
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  background: $themeDark;
+  box-sizing: border-box;
+  padding-top: 20px;
+  img {
+    width: 100%;
+    max-width: 1100px;
+    object-fit: contain;
+
+    @include mq-med {
+      width: 100%;
+      height: 30px;
+      object-fit: cover;
+    }
+  }
+  @include mq-lrg {
+    padding-top: 100px;
+  }
+}
 .hero {
   height: auto;
   min-height: 600px;
   width: 100%;
   background: $themeDark;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 100px;
   color: $contentLight;
   display: flex;
@@ -18,13 +41,13 @@
 
   @include mq-lrg {
     min-height: 800px;
-    padding-top: 100px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
 
   @include mq-med {
     min-height: 800px;
-    padding-top: 100px;
+    padding-top: 40px;
     padding-bottom: 40px;
 
     video{

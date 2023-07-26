@@ -1,20 +1,23 @@
 <template>
   <div class="view-container">
+    <div class="anniversary">
+      <img src="../assets/images/anniversary/int-6th.png" alt="" />
+    </div>
     <div class="hero">
-      <!--  <div class="launch_title content-container">-->
-      <!--    <span>{{ $t("pages.home.launchTitle") }}</span>-->
-      <!--  </div>-->
-      <!--  <CountDown />-->
+      <!--  <div class="launch_title content-container"> -->
+      <!--    <span>{{ $t("pages.home.launchTitle") }}</span> -->
+      <!--  </div> -->
+      <!--  <CountDown /> -->
       <div class="hero__content content-container">
         <div class="hero__header">
           <h1 class="hero__title">{{ $t("pages.home.welcomeMsg") }}</h1>
           <div class="hero__subTitle">{{ $t("pages.home.welcomeNote") }}</div>
         </div>
-          <div class="hero__graphic" style="padding: 16px"> 
-            <video controls muted autoplay>
-              <source :src="vioUrl" type="video/mp4">
-            </video> 
-          </div>
+        <div class="hero__graphic" style="padding: 16px">
+          <video controls muted autoplay>
+            <source :src="vioUrl" type="video/mp4" />
+          </video>
+        </div>
       </div>
     </div>
     <!-- .hero end -->
@@ -228,14 +231,14 @@ import Featured from "@/components/Featured.vue";
 import Exchanges from "@/components/Exchanges.vue";
 // import Explorers from "@/components/Explorers.vue";
 // import CountDown from "@/components/CountDown.vue";
-import vio from "../../src/assets/images/videoplayback.mp4"
+import vio from "../../src/assets/images/videoplayback.mp4";
 
 export default {
   name: "Home",
-  data(){
-    return{
-      vioUrl:vio
-    }
+  data() {
+    return {
+      vioUrl: vio
+    };
   },
   components: {
     ApplicationsGrid,
