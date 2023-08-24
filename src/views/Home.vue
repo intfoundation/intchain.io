@@ -1,7 +1,9 @@
 <template>
   <div class="view-container">
     <div class="anniversary">
-      <img src="../assets/images/anniversary/int-6th.png" alt="" />
+      <a href="https://intbox.org/activity/6th" target="_blank">
+        <img src="../assets/images/anniversary/int-6th.png" alt="" />
+      </a>
     </div>
     <div class="hero">
       <!--  <div class="launch_title content-container"> -->
