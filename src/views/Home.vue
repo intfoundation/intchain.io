@@ -1,7 +1,7 @@
 <template>
   <div class="view-container">
     <div class="anniversary">
-      <a href="https://intbox.org/activity/6th" target="_blank">
+      <a href="https://intbox.org/activity/6th_2" target="_blank">
         <img src="../assets/images/anniversary/int-6th.png" alt="" />
       </a>
     </div>
