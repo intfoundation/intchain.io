@@ -33,20 +33,6 @@
         <div class="team-container team-container--spacing-top">
           <div class="team-item">
             <div class="team-item-image">
-              <img src="../assets/images/team/yinxiangyu.png" alt="" />
-            </div>
-            <div class="team-item-name">
-              {{ $t("pages.team.primaryTeam[0].name") }}
-            </div>
-            <div class="team-item-role">
-              {{ $t("pages.team.primaryTeam[0].role") }}
-            </div>
-            <div class="team-item-description">
-              {{ $t("pages.team.primaryTeam[0].desc") }}
-            </div>
-          </div>
-          <div class="team-item">
-            <div class="team-item-image">
               <img src="../assets/images/team/chenguanghui.png" alt="" />
             </div>
             <div class="team-item-name">
@@ -59,8 +45,6 @@
               {{ $t("pages.team.primaryTeam[1].desc") }}
             </div>
           </div>
-        </div>
-        <div class="team-container team-container--spacing-bottom">
           <div class="team-item">
             <div class="team-item-image">
               <img src="../assets/images/team/wanghongwei-team.png" alt="" />
@@ -75,6 +59,9 @@
               {{ $t("pages.team.primaryTeam[2].desc") }}
             </div>
           </div>
+        </div>
+        <div class="team-container team-container--spacing-bottom">
+          
           <div class="team-item">
             <div class="team-item-image">
               <img src="../assets/images/team/michaelzhang.png" alt="" />
