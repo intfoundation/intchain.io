@@ -34,9 +34,6 @@
             <router-link to="/bsn">{{ $t("pageLink.bsn") }}</router-link>
           </div>
           <div class="nav__item" @click="onClickNav()">
-            <router-link to="/team">{{ $t("pageLink.team") }}</router-link>
-          </div>
-          <div class="nav__item" @click="onClickNav()">
             <router-link to="/community">{{
               $t("pageLink.community")
             }}</router-link>
@@ -275,11 +272,6 @@
                     rel="noopener"
                     >{{ $t("footer.blog") }}</a
                   >
-                </li>
-                <li class="footer__menu_item">
-                  <router-link to="/team">{{
-                    $t("pageLink.team")
-                  }}</router-link>
                 </li>
                 <li class="footer__menu_item">
                   <a

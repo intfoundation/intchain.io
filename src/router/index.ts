@@ -4,7 +4,6 @@ import Home from "../views/Home.vue";
 import Applications from "../views/Applications.vue";
 import NodePlan from "../views/NodePlan.vue";
 import BSN from "../views/BSN.vue";
-import Team from "../views/Team.vue";
 import Wallet from "../views/Wallet.vue";
 import Explorer from "../views/Explorers.vue";
 import Community from "../views/Community.vue";
@@ -49,11 +48,6 @@ const routes: Array<RouteConfig> = [
     path: "/explorer",
     name: "Explorer",
     component: Explorer
-  },
-  {
-    path: "/team",
-    name: "Team",
-    component: Team
   },
   {
     path: "/community",
